@@ -1,0 +1,3064 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_65b351ef196d973022ab331767f02211 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+            <style> #vega_lite_328b8c02620a10f7d908927d2252e740 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    <script src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    
+            <style> #vega_lite_647282e6bf42482e2b30141aa08dca27 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_bcce979d2fa4e044f053edfddae31597 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_490285a0b6aa23fd5c4c4b813273a9af {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_3048d2a562eb8030fe30a18c25503a19 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_c728116ff63d0d8286df618ce08fd788 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_9d24913dbece43c5747451c567c0ab53 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_979132b5fa583b9c9e1fe07070d197ec {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_970a746247cf9989d047537e4b93b8f0 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_0d12c31c469752b55ba42b4b88f87762 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_57efc4b7fd8813ed102334de03a5f1e3 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_33ee038e8ddfda52fccf02edf74a5813 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_7a8a57789492cb97be36d6feffd2b11e {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_d76e47ff7b32bd695f71ed699501a6f4 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_9dd09729f8f06c183b8c9968cbb50eb6 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_e02355eee8b6336fe13d7c496b8cad96 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_cdd791e76acd35d6f4fc8bd5c3cbd915 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_66fd0fab1ff53e891cad7200469e6cd2 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_04883d0ceeeb22f5bc4f90d3a6bf0e3a {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_3935a58e1f574143de2add65e258e64d {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_910e4d48671d627b792418ce8465ded9 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_ad788975a3e366f879901b0d8482e050 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_d972649dc16559880670cd551569e7b6 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_506180e9a9a5fcacd5caf515c8d1c3aa {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_88a0b088f5b568ac6cba8c5f7a64a5eb {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_2aafa521700d4622ba33e433068a3076 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_567fd465c524ad97c42160106b2cb7dd {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_e4d5606441b9e7afda03415daa318f9b {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_cb55123ca4fcae129c47a4e2bb7fccfe {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_ca2f5394cf75b98875f25fecc8eb39d4 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_8cc38ed20ba17e95f00a00f0a5d76015 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_a8212819956e89e3bb1ee74378def0fb {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_20ebdb8e78d4f37765b98e45c12ab36e {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_b3d4ac64ec4e17a9879cfdd9d0405569 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_bafb003ce3458c0a2f10a59bd84297a9 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_bb5bfff73c1df11400d1afb4a2e55722 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_ff60b579c9833ba7eff3d462aa841315 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_e60ff755a73f78853ca47736eb75c3d5 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_982bd11455119eebc2a9bd0beebbd61a {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_fb74e9f17f3ff00f5a33a1a4c11e4339 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_6d74f8cbbc802aea7d2679d1d70a3e5e {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_241253cd4d71a455883321afc450f2f0 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_1a5bd4f118c7679f82cc64a67ccf426f {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_fd9dd8e0cd6c54bfb8e7be2a506dd25a {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_867530559a4ffac51ac83fb4d9bce663 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_d547398e908905aacc5afdc62b079b1b {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_0610e8acec7abe2a5e32d42bcb28a45c {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_54ea471e58c1e1973151139ed817fa47 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_908c3ae149105ccdda717b3c3a24b1d4 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_60808a74b7d7befe747700644d10219c {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_6b5a25ccfea9746708949ab44f699198 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_36d2d9130ec7b0c9a8e7aff1d1dd27f4 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_ab1deec8b164ce7a03ae347e75caa460 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_f3acfa6af60c94da0b68e885c336a039 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_ad38d12aa53f201299535bf5fdd23812 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_c72e30d8f0e940f412284b94a794ca76 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_e1bcc10b81e4a9b7fa83f131c2bf78e8 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_09301be96d881638d7214bacc1c5355c {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_c78b776b8780f4298c68cb05d28d5072 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_361bf9a6f6fe88c4873895be5232f826 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_6b6545d0fc6bcaa56fbf6894b96ab055 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_324748254ff0ca74592f5e50e01a3f2e {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_737cc3097c474c808025cd527039b257 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_0a8ca0fa53a3338e9f8768fcf4541fdb {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_151e42ab242d9e0e687288f130a27edd {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_23fb656f699106e02bdaf2851e7bf2ad {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_7518ee946f421892d96d080bcd7e3855 {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_1298bf9a17439fbb774aac456e95674b {
+                position : relative;
+                width : 800.0px;
+                height: 300.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_65b351ef196d973022ab331767f02211" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_65b351ef196d973022ab331767f02211 = L.map(
+                "map_65b351ef196d973022ab331767f02211",
+                {
+                    center: [40.0, -75.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 1,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d0a9e9cf941cae30a4c226bc79aad7fc = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+            var marker_bc940ce00771ec13ac0065f59b6c57a4 = L.marker(
+                [40.67915721, -74.57075357],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_7cbc18d8496c694c3bd7c8bec29c302c = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_328b8c02620a10f7d908927d2252e740 = $(`             <div id="vega_lite_328b8c02620a10f7d908927d2252e740"></div>             `)[0];
+                popup_7cbc18d8496c694c3bd7c8bec29c302c.setContent(vega_lite_328b8c02620a10f7d908927d2252e740);
+            
+        
+
+        marker_bc940ce00771ec13ac0065f59b6c57a4.bindPopup(popup_7cbc18d8496c694c3bd7c8bec29c302c)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_328b8c02620a10f7d908927d2252e740, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-d117adeae2f936c5815f352e738468b1"}, "datasets": {"data-d117adeae2f936c5815f352e738468b1": [{"category": "Label", "value": "AOI 1"}, {"category": "sumTrees/Canopy", "value": 1769}, {"category": "sumImperviousSurface", "value": 496}, {"category": "sumGrass", "value": 835}, {"category": "sumRivers/Streams", "value": 4}, {"category": "sumLake/Pond", "value": 2}, {"category": "sumCultivatedVegetation", "value": 0}, {"category": "sumBareGround", "value": 59}, {"category": "sumBuilding", "value": 161}, {"category": "sumTreatedPool", "value": 14}, {"category": "sumUnknown", "value": 0}, {"category": "sumBush/Shrub", "value": 76}, {"category": "sumShadow", "value": 284}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 1"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_bc940ce00771ec13ac0065f59b6c57a4.bindTooltip(
+                `<div>
+                     AOI 1 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_531bac00087cb5d7aaf8d0e185667df4 = L.marker(
+                [39.15225014, -77.98308496],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_d782f9e907b9ec46ce382bb75ce26fa9 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_647282e6bf42482e2b30141aa08dca27 = $(`             <div id="vega_lite_647282e6bf42482e2b30141aa08dca27"></div>             `)[0];
+                popup_d782f9e907b9ec46ce382bb75ce26fa9.setContent(vega_lite_647282e6bf42482e2b30141aa08dca27);
+            
+        
+
+        marker_531bac00087cb5d7aaf8d0e185667df4.bindPopup(popup_d782f9e907b9ec46ce382bb75ce26fa9)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_647282e6bf42482e2b30141aa08dca27, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-d7e071eaa238836d8f246671c6064c61"}, "datasets": {"data-d7e071eaa238836d8f246671c6064c61": [{"category": "Label", "value": "AOI 2"}, {"category": "sumTrees/Canopy", "value": 932}, {"category": "sumImperviousSurface", "value": 377}, {"category": "sumGrass", "value": 1039}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 13}, {"category": "sumCultivatedVegetation", "value": 281}, {"category": "sumBareGround", "value": 154}, {"category": "sumBuilding", "value": 286}, {"category": "sumTreatedPool", "value": 0}, {"category": "sumUnknown", "value": 2}, {"category": "sumBush/Shrub", "value": 168}, {"category": "sumShadow", "value": 448}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 2"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_531bac00087cb5d7aaf8d0e185667df4.bindTooltip(
+                `<div>
+                     AOI 2 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6521b730dbc13e3bb88925f5b5bff046 = L.marker(
+                [32.9852446, -96.62104476],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_82183acbda54d43d47d7b741308a0893 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_bcce979d2fa4e044f053edfddae31597 = $(`             <div id="vega_lite_bcce979d2fa4e044f053edfddae31597"></div>             `)[0];
+                popup_82183acbda54d43d47d7b741308a0893.setContent(vega_lite_bcce979d2fa4e044f053edfddae31597);
+            
+        
+
+        marker_6521b730dbc13e3bb88925f5b5bff046.bindPopup(popup_82183acbda54d43d47d7b741308a0893)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_bcce979d2fa4e044f053edfddae31597, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-bf83e931186bb083b1ad495f9b02c022"}, "datasets": {"data-bf83e931186bb083b1ad495f9b02c022": [{"category": "Label", "value": "AOI 3"}, {"category": "sumTrees/Canopy", "value": 904}, {"category": "sumImperviousSurface", "value": 732}, {"category": "sumGrass", "value": 1505}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 17}, {"category": "sumCultivatedVegetation", "value": 3}, {"category": "sumBareGround", "value": 114}, {"category": "sumBuilding", "value": 348}, {"category": "sumTreatedPool", "value": 8}, {"category": "sumUnknown", "value": 0}, {"category": "sumBush/Shrub", "value": 56}, {"category": "sumShadow", "value": 13}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 3"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_6521b730dbc13e3bb88925f5b5bff046.bindTooltip(
+                `<div>
+                     AOI 3 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d4c35decc317d15f2319ea3ed727141b = L.marker(
+                [40.74894759, -73.70989323],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_4721b3a05998969469950a4b335af784 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_490285a0b6aa23fd5c4c4b813273a9af = $(`             <div id="vega_lite_490285a0b6aa23fd5c4c4b813273a9af"></div>             `)[0];
+                popup_4721b3a05998969469950a4b335af784.setContent(vega_lite_490285a0b6aa23fd5c4c4b813273a9af);
+            
+        
+
+        marker_d4c35decc317d15f2319ea3ed727141b.bindPopup(popup_4721b3a05998969469950a4b335af784)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_490285a0b6aa23fd5c4c4b813273a9af, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-d88a602af25c48ace6afaa0dd4937304"}, "datasets": {"data-d88a602af25c48ace6afaa0dd4937304": [{"category": "Label", "value": "AOI 4"}, {"category": "sumTrees/Canopy", "value": 816}, {"category": "sumImperviousSurface", "value": 993}, {"category": "sumGrass", "value": 394}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 20}, {"category": "sumCultivatedVegetation", "value": 22}, {"category": "sumBareGround", "value": 0}, {"category": "sumBuilding", "value": 1450}, {"category": "sumTreatedPool", "value": 5}, {"category": "sumUnknown", "value": 0}, {"category": "sumBush/Shrub", "value": 0}, {"category": "sumShadow", "value": 0}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 4"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_d4c35decc317d15f2319ea3ed727141b.bindTooltip(
+                `<div>
+                     AOI 4 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_15c8bbf3185be67c09b9407ac63c3892 = L.marker(
+                [26.32378961, -98.7169674],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_0cece8a5b84ed7534637b6d78ee72d9e = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_3048d2a562eb8030fe30a18c25503a19 = $(`             <div id="vega_lite_3048d2a562eb8030fe30a18c25503a19"></div>             `)[0];
+                popup_0cece8a5b84ed7534637b6d78ee72d9e.setContent(vega_lite_3048d2a562eb8030fe30a18c25503a19);
+            
+        
+
+        marker_15c8bbf3185be67c09b9407ac63c3892.bindPopup(popup_0cece8a5b84ed7534637b6d78ee72d9e)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_3048d2a562eb8030fe30a18c25503a19, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-0f5fc7d6c4783a958dbb81ace70324b4"}, "datasets": {"data-0f5fc7d6c4783a958dbb81ace70324b4": [{"category": "Label", "value": "AOI 6"}, {"category": "sumTrees/Canopy", "value": 1201}, {"category": "sumImperviousSurface", "value": 0}, {"category": "sumGrass", "value": 674}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 0}, {"category": "sumCultivatedVegetation", "value": 0}, {"category": "sumBareGround", "value": 1642}, {"category": "sumBuilding", "value": 114}, {"category": "sumTreatedPool", "value": 0}, {"category": "sumUnknown", "value": 0}, {"category": "sumBush/Shrub", "value": 59}, {"category": "sumShadow", "value": 10}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 6"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_15c8bbf3185be67c09b9407ac63c3892.bindTooltip(
+                `<div>
+                     AOI 6 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d40f1a9b9c0ff3376f2bc83389b9b89b = L.marker(
+                [29.91759617, -95.80198288],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_97ecb21cd960f1a23e117e8bcc3404ae = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_c728116ff63d0d8286df618ce08fd788 = $(`             <div id="vega_lite_c728116ff63d0d8286df618ce08fd788"></div>             `)[0];
+                popup_97ecb21cd960f1a23e117e8bcc3404ae.setContent(vega_lite_c728116ff63d0d8286df618ce08fd788);
+            
+        
+
+        marker_d40f1a9b9c0ff3376f2bc83389b9b89b.bindPopup(popup_97ecb21cd960f1a23e117e8bcc3404ae)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_c728116ff63d0d8286df618ce08fd788, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-de0a7f37b4240cad412b728c2c1ecd4c"}, "datasets": {"data-de0a7f37b4240cad412b728c2c1ecd4c": [{"category": "Label", "value": "AOI 8"}, {"category": "sumTrees/Canopy", "value": 200}, {"category": "sumImperviousSurface", "value": 43}, {"category": "sumGrass", "value": 2135}, {"category": "sumRivers/Streams", "value": 19}, {"category": "sumLake/Pond", "value": 284}, {"category": "sumCultivatedVegetation", "value": 100}, {"category": "sumBareGround", "value": 773}, {"category": "sumBuilding", "value": 11}, {"category": "sumTreatedPool", "value": 0}, {"category": "sumUnknown", "value": 0}, {"category": "sumBush/Shrub", "value": 124}, {"category": "sumShadow", "value": 5}, {"category": "sumIrrigationDitch", "value": 6}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 8"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_d40f1a9b9c0ff3376f2bc83389b9b89b.bindTooltip(
+                `<div>
+                     AOI 8 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bb1b8c1d4bed7ed96314c57974629c83 = L.marker(
+                [41.82768265, -88.15760136],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_8f37d65439784f76165f2268d7615f3a = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_9d24913dbece43c5747451c567c0ab53 = $(`             <div id="vega_lite_9d24913dbece43c5747451c567c0ab53"></div>             `)[0];
+                popup_8f37d65439784f76165f2268d7615f3a.setContent(vega_lite_9d24913dbece43c5747451c567c0ab53);
+            
+        
+
+        marker_bb1b8c1d4bed7ed96314c57974629c83.bindPopup(popup_8f37d65439784f76165f2268d7615f3a)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_9d24913dbece43c5747451c567c0ab53, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-025aa1596d7553ceb564e36f7e207962"}, "datasets": {"data-025aa1596d7553ceb564e36f7e207962": [{"category": "Label", "value": "AOI 9"}, {"category": "sumTrees/Canopy", "value": 1463}, {"category": "sumImperviousSurface", "value": 277}, {"category": "sumGrass", "value": 550}, {"category": "sumRivers/Streams", "value": 10}, {"category": "sumLake/Pond", "value": 138}, {"category": "sumCultivatedVegetation", "value": 289}, {"category": "sumBareGround", "value": 21}, {"category": "sumBuilding", "value": 170}, {"category": "sumTreatedPool", "value": 1}, {"category": "sumUnknown", "value": 0}, {"category": "sumBush/Shrub", "value": 206}, {"category": "sumShadow", "value": 575}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 9"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_bb1b8c1d4bed7ed96314c57974629c83.bindTooltip(
+                `<div>
+                     AOI 9 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a08f43c56a07e19855b4b6d68d926da = L.marker(
+                [37.29093799, -122.0288801],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_74463abb78a108669a0ec5e78e4b54f1 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_979132b5fa583b9c9e1fe07070d197ec = $(`             <div id="vega_lite_979132b5fa583b9c9e1fe07070d197ec"></div>             `)[0];
+                popup_74463abb78a108669a0ec5e78e4b54f1.setContent(vega_lite_979132b5fa583b9c9e1fe07070d197ec);
+            
+        
+
+        marker_4a08f43c56a07e19855b4b6d68d926da.bindPopup(popup_74463abb78a108669a0ec5e78e4b54f1)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_979132b5fa583b9c9e1fe07070d197ec, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-50b4a8193680eeefc1a5ae8dcce18261"}, "datasets": {"data-50b4a8193680eeefc1a5ae8dcce18261": [{"category": "Label", "value": "AOI 10"}, {"category": "sumTrees/Canopy", "value": 999}, {"category": "sumImperviousSurface", "value": 919}, {"category": "sumGrass", "value": 321}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 17}, {"category": "sumCultivatedVegetation", "value": 0}, {"category": "sumBareGround", "value": 183}, {"category": "sumBuilding", "value": 721}, {"category": "sumTreatedPool", "value": 34}, {"category": "sumUnknown", "value": 0}, {"category": "sumBush/Shrub", "value": 211}, {"category": "sumShadow", "value": 295}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 10"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_4a08f43c56a07e19855b4b6d68d926da.bindTooltip(
+                `<div>
+                     AOI 10 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_292843572cf6faaffb73a3a195be7cbb = L.marker(
+                [25.94493248, -97.48650678],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_34a1fdb2a001ac9deff966a4ecf6ef64 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_970a746247cf9989d047537e4b93b8f0 = $(`             <div id="vega_lite_970a746247cf9989d047537e4b93b8f0"></div>             `)[0];
+                popup_34a1fdb2a001ac9deff966a4ecf6ef64.setContent(vega_lite_970a746247cf9989d047537e4b93b8f0);
+            
+        
+
+        marker_292843572cf6faaffb73a3a195be7cbb.bindPopup(popup_34a1fdb2a001ac9deff966a4ecf6ef64)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_970a746247cf9989d047537e4b93b8f0, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-730b88a7d469b558b61d9b95a545f66e"}, "datasets": {"data-730b88a7d469b558b61d9b95a545f66e": [{"category": "Label", "value": "AOI 11"}, {"category": "sumTrees/Canopy", "value": 526}, {"category": "sumImperviousSurface", "value": 974}, {"category": "sumGrass", "value": 1060}, {"category": "sumRivers/Streams", "value": 110}, {"category": "sumLake/Pond", "value": 21}, {"category": "sumCultivatedVegetation", "value": 0}, {"category": "sumBareGround", "value": 152}, {"category": "sumBuilding", "value": 587}, {"category": "sumTreatedPool", "value": 9}, {"category": "sumUnknown", "value": 6}, {"category": "sumBush/Shrub", "value": 31}, {"category": "sumShadow", "value": 224}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 11"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_292843572cf6faaffb73a3a195be7cbb.bindTooltip(
+                `<div>
+                     AOI 11 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2028f8ec5e3d026808173fa8015abf2e = L.marker(
+                [39.99579067, -74.77623492],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_540cc26dfca2de6c2426e9db353767e2 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_0d12c31c469752b55ba42b4b88f87762 = $(`             <div id="vega_lite_0d12c31c469752b55ba42b4b88f87762"></div>             `)[0];
+                popup_540cc26dfca2de6c2426e9db353767e2.setContent(vega_lite_0d12c31c469752b55ba42b4b88f87762);
+            
+        
+
+        marker_2028f8ec5e3d026808173fa8015abf2e.bindPopup(popup_540cc26dfca2de6c2426e9db353767e2)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_0d12c31c469752b55ba42b4b88f87762, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-5181c3720180f203b1df9400e3579cea"}, "datasets": {"data-5181c3720180f203b1df9400e3579cea": [{"category": "Label", "value": "AOI 12"}, {"category": "sumTrees/Canopy", "value": 1612}, {"category": "sumImperviousSurface", "value": 465}, {"category": "sumGrass", "value": 826}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 3}, {"category": "sumCultivatedVegetation", "value": 0}, {"category": "sumBareGround", "value": 222}, {"category": "sumBuilding", "value": 350}, {"category": "sumTreatedPool", "value": 2}, {"category": "sumUnknown", "value": 0}, {"category": "sumBush/Shrub", "value": 5}, {"category": "sumShadow", "value": 215}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 12"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_2028f8ec5e3d026808173fa8015abf2e.bindTooltip(
+                `<div>
+                     AOI 12 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f46df9ef4c5817b48087051dda4e49e8 = L.marker(
+                [33.11990686, -96.71841103],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_2d5fa3eeddd00670c9b9764a73937ae0 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_57efc4b7fd8813ed102334de03a5f1e3 = $(`             <div id="vega_lite_57efc4b7fd8813ed102334de03a5f1e3"></div>             `)[0];
+                popup_2d5fa3eeddd00670c9b9764a73937ae0.setContent(vega_lite_57efc4b7fd8813ed102334de03a5f1e3);
+            
+        
+
+        marker_f46df9ef4c5817b48087051dda4e49e8.bindPopup(popup_2d5fa3eeddd00670c9b9764a73937ae0)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_57efc4b7fd8813ed102334de03a5f1e3, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-547234fd7a28955a52f8e06772c0fbb3"}, "datasets": {"data-547234fd7a28955a52f8e06772c0fbb3": [{"category": "Label", "value": "AOI 13"}, {"category": "sumTrees/Canopy", "value": 694}, {"category": "sumImperviousSurface", "value": 772}, {"category": "sumGrass", "value": 1128}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 1}, {"category": "sumCultivatedVegetation", "value": 100}, {"category": "sumBareGround", "value": 408}, {"category": "sumBuilding", "value": 541}, {"category": "sumTreatedPool", "value": 8}, {"category": "sumUnknown", "value": 5}, {"category": "sumBush/Shrub", "value": 31}, {"category": "sumShadow", "value": 12}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 13"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_f46df9ef4c5817b48087051dda4e49e8.bindTooltip(
+                `<div>
+                     AOI 13 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d32e6be61a82a4e9249b8e6086a55e26 = L.marker(
+                [30.50993467, -97.74446279],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_208e1e847b4dc2f5544fcf623c102e53 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_33ee038e8ddfda52fccf02edf74a5813 = $(`             <div id="vega_lite_33ee038e8ddfda52fccf02edf74a5813"></div>             `)[0];
+                popup_208e1e847b4dc2f5544fcf623c102e53.setContent(vega_lite_33ee038e8ddfda52fccf02edf74a5813);
+            
+        
+
+        marker_d32e6be61a82a4e9249b8e6086a55e26.bindPopup(popup_208e1e847b4dc2f5544fcf623c102e53)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_33ee038e8ddfda52fccf02edf74a5813, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-9c55266efa3ec7c42084cb417e0887e4"}, "datasets": {"data-9c55266efa3ec7c42084cb417e0887e4": [{"category": "Label", "value": "AOI 14"}, {"category": "sumTrees/Canopy", "value": 1242}, {"category": "sumImperviousSurface", "value": 658}, {"category": "sumGrass", "value": 133}, {"category": "sumRivers/Streams", "value": 17}, {"category": "sumLake/Pond", "value": 17}, {"category": "sumCultivatedVegetation", "value": 588}, {"category": "sumBareGround", "value": 195}, {"category": "sumBuilding", "value": 732}, {"category": "sumTreatedPool", "value": 35}, {"category": "sumUnknown", "value": 32}, {"category": "sumBush/Shrub", "value": 10}, {"category": "sumShadow", "value": 41}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 14"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_d32e6be61a82a4e9249b8e6086a55e26.bindTooltip(
+                `<div>
+                     AOI 14 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_820823a2472cf01f4ad550a2963015b2 = L.marker(
+                [29.75364773, -95.49320698],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_ce7cf47f7ec49142d8c9bbdec4e3e452 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_7a8a57789492cb97be36d6feffd2b11e = $(`             <div id="vega_lite_7a8a57789492cb97be36d6feffd2b11e"></div>             `)[0];
+                popup_ce7cf47f7ec49142d8c9bbdec4e3e452.setContent(vega_lite_7a8a57789492cb97be36d6feffd2b11e);
+            
+        
+
+        marker_820823a2472cf01f4ad550a2963015b2.bindPopup(popup_ce7cf47f7ec49142d8c9bbdec4e3e452)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_7a8a57789492cb97be36d6feffd2b11e, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-cb58c6e416850c2770d27cbd11aea67e"}, "datasets": {"data-cb58c6e416850c2770d27cbd11aea67e": [{"category": "Label", "value": "AOI 15"}, {"category": "sumTrees/Canopy", "value": 1016}, {"category": "sumImperviousSurface", "value": 1038}, {"category": "sumGrass", "value": 327}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 0}, {"category": "sumCultivatedVegetation", "value": 0}, {"category": "sumBareGround", "value": 1}, {"category": "sumBuilding", "value": 1212}, {"category": "sumTreatedPool", "value": 17}, {"category": "sumUnknown", "value": 0}, {"category": "sumBush/Shrub", "value": 0}, {"category": "sumShadow", "value": 0}, {"category": "sumIrrigationDitch", "value": 89}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 15"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_820823a2472cf01f4ad550a2963015b2.bindTooltip(
+                `<div>
+                     AOI 15 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_84a5682eb1c228149e8b1529853d7eaf = L.marker(
+                [40.59981227, -74.67234942],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_817339c9693ccf248d7c1f9802d2566c = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_d76e47ff7b32bd695f71ed699501a6f4 = $(`             <div id="vega_lite_d76e47ff7b32bd695f71ed699501a6f4"></div>             `)[0];
+                popup_817339c9693ccf248d7c1f9802d2566c.setContent(vega_lite_d76e47ff7b32bd695f71ed699501a6f4);
+            
+        
+
+        marker_84a5682eb1c228149e8b1529853d7eaf.bindPopup(popup_817339c9693ccf248d7c1f9802d2566c)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_d76e47ff7b32bd695f71ed699501a6f4, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-18eede7b99a1338de89f64b75121672a"}, "datasets": {"data-18eede7b99a1338de89f64b75121672a": [{"category": "Label", "value": "AOI 16"}, {"category": "sumTrees/Canopy", "value": 1409}, {"category": "sumImperviousSurface", "value": 17}, {"category": "sumGrass", "value": 122}, {"category": "sumRivers/Streams", "value": 76}, {"category": "sumLake/Pond", "value": 0}, {"category": "sumCultivatedVegetation", "value": 773}, {"category": "sumBareGround", "value": 338}, {"category": "sumBuilding", "value": 356}, {"category": "sumTreatedPool", "value": 16}, {"category": "sumUnknown", "value": 0}, {"category": "sumBush/Shrub", "value": 18}, {"category": "sumShadow", "value": 575}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 16"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_84a5682eb1c228149e8b1529853d7eaf.bindTooltip(
+                `<div>
+                     AOI 16 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_26e6a62a17fdd2ae157666bfc02baa63 = L.marker(
+                [37.31701485, -122.0517553],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_07fb4746624b87f691bd4da0044e1fcd = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_9dd09729f8f06c183b8c9968cbb50eb6 = $(`             <div id="vega_lite_9dd09729f8f06c183b8c9968cbb50eb6"></div>             `)[0];
+                popup_07fb4746624b87f691bd4da0044e1fcd.setContent(vega_lite_9dd09729f8f06c183b8c9968cbb50eb6);
+            
+        
+
+        marker_26e6a62a17fdd2ae157666bfc02baa63.bindPopup(popup_07fb4746624b87f691bd4da0044e1fcd)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_9dd09729f8f06c183b8c9968cbb50eb6, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-86de22f1988dd44f652831f3c673a848"}, "datasets": {"data-86de22f1988dd44f652831f3c673a848": [{"category": "Label", "value": "AOI 17"}, {"category": "sumTrees/Canopy", "value": 497}, {"category": "sumImperviousSurface", "value": 1325}, {"category": "sumGrass", "value": 301}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 0}, {"category": "sumCultivatedVegetation", "value": 0}, {"category": "sumBareGround", "value": 348}, {"category": "sumBuilding", "value": 790}, {"category": "sumTreatedPool", "value": 8}, {"category": "sumUnknown", "value": 23}, {"category": "sumBush/Shrub", "value": 332}, {"category": "sumShadow", "value": 76}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 17"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_26e6a62a17fdd2ae157666bfc02baa63.bindTooltip(
+                `<div>
+                     AOI 17 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fccaac52f2236ec877e48fff602e159a = L.marker(
+                [42.14351465, -88.31711021],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_368dfe9279119ceecd5d54976d767e5c = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_e02355eee8b6336fe13d7c496b8cad96 = $(`             <div id="vega_lite_e02355eee8b6336fe13d7c496b8cad96"></div>             `)[0];
+                popup_368dfe9279119ceecd5d54976d767e5c.setContent(vega_lite_e02355eee8b6336fe13d7c496b8cad96);
+            
+        
+
+        marker_fccaac52f2236ec877e48fff602e159a.bindPopup(popup_368dfe9279119ceecd5d54976d767e5c)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_e02355eee8b6336fe13d7c496b8cad96, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-da34b9c32a8a2afb50e216f62a36cff8"}, "datasets": {"data-da34b9c32a8a2afb50e216f62a36cff8": [{"category": "Label", "value": "AOI 18"}, {"category": "sumTrees/Canopy", "value": 1119}, {"category": "sumImperviousSurface", "value": 334}, {"category": "sumGrass", "value": 716}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 120}, {"category": "sumCultivatedVegetation", "value": 799}, {"category": "sumBareGround", "value": 28}, {"category": "sumBuilding", "value": 290}, {"category": "sumTreatedPool", "value": 0}, {"category": "sumUnknown", "value": 0}, {"category": "sumBush/Shrub", "value": 138}, {"category": "sumShadow", "value": 156}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 18"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_fccaac52f2236ec877e48fff602e159a.bindTooltip(
+                `<div>
+                     AOI 18 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8fc6eb6ba9da1a43c90949cc7810d421 = L.marker(
+                [25.97544945, -97.4899311],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_311153a9f601b8d432136185625feed7 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_cdd791e76acd35d6f4fc8bd5c3cbd915 = $(`             <div id="vega_lite_cdd791e76acd35d6f4fc8bd5c3cbd915"></div>             `)[0];
+                popup_311153a9f601b8d432136185625feed7.setContent(vega_lite_cdd791e76acd35d6f4fc8bd5c3cbd915);
+            
+        
+
+        marker_8fc6eb6ba9da1a43c90949cc7810d421.bindPopup(popup_311153a9f601b8d432136185625feed7)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_cdd791e76acd35d6f4fc8bd5c3cbd915, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-cb79cf2f0f4a31f0fc9735784150f594"}, "datasets": {"data-cb79cf2f0f4a31f0fc9735784150f594": [{"category": "Label", "value": "AOI 21"}, {"category": "sumTrees/Canopy", "value": 431}, {"category": "sumImperviousSurface", "value": 756}, {"category": "sumGrass", "value": 1216}, {"category": "sumRivers/Streams", "value": 46}, {"category": "sumLake/Pond", "value": 0}, {"category": "sumCultivatedVegetation", "value": 200}, {"category": "sumBareGround", "value": 347}, {"category": "sumBuilding", "value": 556}, {"category": "sumTreatedPool", "value": 4}, {"category": "sumUnknown", "value": 0}, {"category": "sumBush/Shrub", "value": 65}, {"category": "sumShadow", "value": 79}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 21"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_8fc6eb6ba9da1a43c90949cc7810d421.bindTooltip(
+                `<div>
+                     AOI 21 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_115e6004e61d0c1a5a31eaf1dc6554ae = L.marker(
+                [30.43368983, -97.7730698],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_26fff7324c09f344bae7e7762fe0ef80 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_66fd0fab1ff53e891cad7200469e6cd2 = $(`             <div id="vega_lite_66fd0fab1ff53e891cad7200469e6cd2"></div>             `)[0];
+                popup_26fff7324c09f344bae7e7762fe0ef80.setContent(vega_lite_66fd0fab1ff53e891cad7200469e6cd2);
+            
+        
+
+        marker_115e6004e61d0c1a5a31eaf1dc6554ae.bindPopup(popup_26fff7324c09f344bae7e7762fe0ef80)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_66fd0fab1ff53e891cad7200469e6cd2, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-403513fba727f05aa2e14d81b1147de0"}, "datasets": {"data-403513fba727f05aa2e14d81b1147de0": [{"category": "Label", "value": "AOI 22"}, {"category": "sumTrees/Canopy", "value": 1715}, {"category": "sumImperviousSurface", "value": 752}, {"category": "sumGrass", "value": 330}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 0}, {"category": "sumCultivatedVegetation", "value": 63}, {"category": "sumBareGround", "value": 8}, {"category": "sumBuilding", "value": 643}, {"category": "sumTreatedPool", "value": 9}, {"category": "sumUnknown", "value": 0}, {"category": "sumBush/Shrub", "value": 0}, {"category": "sumShadow", "value": 180}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 22"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_115e6004e61d0c1a5a31eaf1dc6554ae.bindTooltip(
+                `<div>
+                     AOI 22 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_89c64ca5f934666a48be8d9739b189c6 = L.marker(
+                [37.451831, -122.105484],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_91560869ffaf1d1bc127e9cda77e2516 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_04883d0ceeeb22f5bc4f90d3a6bf0e3a = $(`             <div id="vega_lite_04883d0ceeeb22f5bc4f90d3a6bf0e3a"></div>             `)[0];
+                popup_91560869ffaf1d1bc127e9cda77e2516.setContent(vega_lite_04883d0ceeeb22f5bc4f90d3a6bf0e3a);
+            
+        
+
+        marker_89c64ca5f934666a48be8d9739b189c6.bindPopup(popup_91560869ffaf1d1bc127e9cda77e2516)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_04883d0ceeeb22f5bc4f90d3a6bf0e3a, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-8209096a17e9ec06a825fb332260fabf"}, "datasets": {"data-8209096a17e9ec06a825fb332260fabf": [{"category": "Label", "value": "AOI 24"}, {"category": "sumTrees/Canopy", "value": 135}, {"category": "sumImperviousSurface", "value": 421}, {"category": "sumGrass", "value": 54}, {"category": "sumRivers/Streams", "value": 403}, {"category": "sumLake/Pond", "value": 989}, {"category": "sumCultivatedVegetation", "value": 111}, {"category": "sumBareGround", "value": 248}, {"category": "sumBuilding", "value": 81}, {"category": "sumTreatedPool", "value": 0}, {"category": "sumUnknown", "value": 0}, {"category": "sumBush/Shrub", "value": 1258}, {"category": "sumShadow", "value": 0}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 24"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_89c64ca5f934666a48be8d9739b189c6.bindTooltip(
+                `<div>
+                     AOI 24 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_691fa8dc30dc52b038b3ca06d54aaff8 = L.marker(
+                [41.05341783, -74.16181326],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_ec475baea999ca5de1b4777c630619e9 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_3935a58e1f574143de2add65e258e64d = $(`             <div id="vega_lite_3935a58e1f574143de2add65e258e64d"></div>             `)[0];
+                popup_ec475baea999ca5de1b4777c630619e9.setContent(vega_lite_3935a58e1f574143de2add65e258e64d);
+            
+        
+
+        marker_691fa8dc30dc52b038b3ca06d54aaff8.bindPopup(popup_ec475baea999ca5de1b4777c630619e9)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_3935a58e1f574143de2add65e258e64d, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-5fc66b9b7c7b6601dc5705ccf8919c66"}, "datasets": {"data-5fc66b9b7c7b6601dc5705ccf8919c66": [{"category": "Label", "value": "AOI 25"}, {"category": "sumTrees/Canopy", "value": 2308}, {"category": "sumImperviousSurface", "value": 2}, {"category": "sumGrass", "value": 513}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 7}, {"category": "sumCultivatedVegetation", "value": 4}, {"category": "sumBareGround", "value": 268}, {"category": "sumBuilding", "value": 213}, {"category": "sumTreatedPool", "value": 6}, {"category": "sumUnknown", "value": 19}, {"category": "sumBush/Shrub", "value": 75}, {"category": "sumShadow", "value": 285}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 25"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_691fa8dc30dc52b038b3ca06d54aaff8.bindTooltip(
+                `<div>
+                     AOI 25 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a142807b916fa80b38083caa64de94f = L.marker(
+                [17.47957734, 78.54264698],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_5f9fa59f279a0fc52581143a3c72ace2 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_910e4d48671d627b792418ce8465ded9 = $(`             <div id="vega_lite_910e4d48671d627b792418ce8465ded9"></div>             `)[0];
+                popup_5f9fa59f279a0fc52581143a3c72ace2.setContent(vega_lite_910e4d48671d627b792418ce8465ded9);
+            
+        
+
+        marker_4a142807b916fa80b38083caa64de94f.bindPopup(popup_5f9fa59f279a0fc52581143a3c72ace2)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_910e4d48671d627b792418ce8465ded9, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-58dc4fb30ad82ec1f06008144a75ba31"}, "datasets": {"data-58dc4fb30ad82ec1f06008144a75ba31": [{"category": "Label", "value": "AOI 26"}, {"category": "sumTrees/Canopy", "value": 1003}, {"category": "sumImperviousSurface", "value": 164}, {"category": "sumGrass", "value": 4}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 0}, {"category": "sumCultivatedVegetation", "value": 0}, {"category": "sumBareGround", "value": 584}, {"category": "sumBuilding", "value": 1882}, {"category": "sumTreatedPool", "value": 0}, {"category": "sumUnknown", "value": 23}, {"category": "sumBush/Shrub", "value": 6}, {"category": "sumShadow", "value": 34}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 26"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_4a142807b916fa80b38083caa64de94f.bindTooltip(
+                `<div>
+                     AOI 26 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ace2dd1c3725b12dd532448972a6e635 = L.marker(
+                [40.68505587, -73.97819088],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_3de53ec6c1031667157a18301b1ae29a = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_ad788975a3e366f879901b0d8482e050 = $(`             <div id="vega_lite_ad788975a3e366f879901b0d8482e050"></div>             `)[0];
+                popup_3de53ec6c1031667157a18301b1ae29a.setContent(vega_lite_ad788975a3e366f879901b0d8482e050);
+            
+        
+
+        marker_ace2dd1c3725b12dd532448972a6e635.bindPopup(popup_3de53ec6c1031667157a18301b1ae29a)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_ad788975a3e366f879901b0d8482e050, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-14e8693079b22c9de64590ff8ce0df72"}, "datasets": {"data-14e8693079b22c9de64590ff8ce0df72": [{"category": "Label", "value": "AOI 28"}, {"category": "sumTrees/Canopy", "value": 912}, {"category": "sumImperviousSurface", "value": 1118}, {"category": "sumGrass", "value": 163}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 0}, {"category": "sumCultivatedVegetation", "value": 13}, {"category": "sumBareGround", "value": 0}, {"category": "sumBuilding", "value": 1373}, {"category": "sumTreatedPool", "value": 0}, {"category": "sumUnknown", "value": 0}, {"category": "sumBush/Shrub", "value": 29}, {"category": "sumShadow", "value": 92}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 28"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_ace2dd1c3725b12dd532448972a6e635.bindTooltip(
+                `<div>
+                     AOI 28 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_10c3707c1d8164905816efca3f7e2bd1 = L.marker(
+                [37.52059315, -121.9250357],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_6831149bf8cba5419ef4d8a2ebb2d89c = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_d972649dc16559880670cd551569e7b6 = $(`             <div id="vega_lite_d972649dc16559880670cd551569e7b6"></div>             `)[0];
+                popup_6831149bf8cba5419ef4d8a2ebb2d89c.setContent(vega_lite_d972649dc16559880670cd551569e7b6);
+            
+        
+
+        marker_10c3707c1d8164905816efca3f7e2bd1.bindPopup(popup_6831149bf8cba5419ef4d8a2ebb2d89c)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_d972649dc16559880670cd551569e7b6, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-29756275ef29901f2f9113ac6a0fba19"}, "datasets": {"data-29756275ef29901f2f9113ac6a0fba19": [{"category": "Label", "value": "AOI 29"}, {"category": "sumTrees/Canopy", "value": 574}, {"category": "sumImperviousSurface", "value": 879}, {"category": "sumGrass", "value": 1033}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 0}, {"category": "sumCultivatedVegetation", "value": 140}, {"category": "sumBareGround", "value": 300}, {"category": "sumBuilding", "value": 566}, {"category": "sumTreatedPool", "value": 4}, {"category": "sumUnknown", "value": 0}, {"category": "sumBush/Shrub", "value": 123}, {"category": "sumShadow", "value": 80}, {"category": "sumIrrigationDitch", "value": 1}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 29"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_10c3707c1d8164905816efca3f7e2bd1.bindTooltip(
+                `<div>
+                     AOI 29 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e838d9ca5130ef1962fe787b073b11e8 = L.marker(
+                [30.50039046, -97.76262403],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_5884f4005c603b6aa848451163926c4a = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_506180e9a9a5fcacd5caf515c8d1c3aa = $(`             <div id="vega_lite_506180e9a9a5fcacd5caf515c8d1c3aa"></div>             `)[0];
+                popup_5884f4005c603b6aa848451163926c4a.setContent(vega_lite_506180e9a9a5fcacd5caf515c8d1c3aa);
+            
+        
+
+        marker_e838d9ca5130ef1962fe787b073b11e8.bindPopup(popup_5884f4005c603b6aa848451163926c4a)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_506180e9a9a5fcacd5caf515c8d1c3aa, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-b12c79f7a20a14d5a3cf910a695bf206"}, "datasets": {"data-b12c79f7a20a14d5a3cf910a695bf206": [{"category": "Label", "value": "AOI 30"}, {"category": "sumTrees/Canopy", "value": 1089}, {"category": "sumImperviousSurface", "value": 718}, {"category": "sumGrass", "value": 409}, {"category": "sumRivers/Streams", "value": 40}, {"category": "sumLake/Pond", "value": 21}, {"category": "sumCultivatedVegetation", "value": 29}, {"category": "sumBareGround", "value": 133}, {"category": "sumBuilding", "value": 349}, {"category": "sumTreatedPool", "value": 13}, {"category": "sumUnknown", "value": 5}, {"category": "sumBush/Shrub", "value": 720}, {"category": "sumShadow", "value": 174}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 30"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_e838d9ca5130ef1962fe787b073b11e8.bindTooltip(
+                `<div>
+                     AOI 30 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f48f8077f1a5e91b25eac982d2980789 = L.marker(
+                [29.66864091, -98.4145242],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_44359cccd44ed230efcd51a84da5762e = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_88a0b088f5b568ac6cba8c5f7a64a5eb = $(`             <div id="vega_lite_88a0b088f5b568ac6cba8c5f7a64a5eb"></div>             `)[0];
+                popup_44359cccd44ed230efcd51a84da5762e.setContent(vega_lite_88a0b088f5b568ac6cba8c5f7a64a5eb);
+            
+        
+
+        marker_f48f8077f1a5e91b25eac982d2980789.bindPopup(popup_44359cccd44ed230efcd51a84da5762e)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_88a0b088f5b568ac6cba8c5f7a64a5eb, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-bdde629b384a73eb0d6435be3d8d41c9"}, "datasets": {"data-bdde629b384a73eb0d6435be3d8d41c9": [{"category": "Label", "value": "AOI 31"}, {"category": "sumTrees/Canopy", "value": 2600}, {"category": "sumImperviousSurface", "value": 8}, {"category": "sumGrass", "value": 18}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 0}, {"category": "sumCultivatedVegetation", "value": 0}, {"category": "sumBareGround", "value": 96}, {"category": "sumBuilding", "value": 571}, {"category": "sumTreatedPool", "value": 0}, {"category": "sumUnknown", "value": 0}, {"category": "sumBush/Shrub", "value": 407}, {"category": "sumShadow", "value": 0}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 31"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_f48f8077f1a5e91b25eac982d2980789.bindTooltip(
+                `<div>
+                     AOI 31 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d64f224582796a7e15f6235f747b4d2d = L.marker(
+                [40.33490718, -74.55116975],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_5ff62c1777948f45199f70b8b7563691 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_2aafa521700d4622ba33e433068a3076 = $(`             <div id="vega_lite_2aafa521700d4622ba33e433068a3076"></div>             `)[0];
+                popup_5ff62c1777948f45199f70b8b7563691.setContent(vega_lite_2aafa521700d4622ba33e433068a3076);
+            
+        
+
+        marker_d64f224582796a7e15f6235f747b4d2d.bindPopup(popup_5ff62c1777948f45199f70b8b7563691)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_2aafa521700d4622ba33e433068a3076, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-23958fbc6f5dc4c30b0e4fe78c6f7cc9"}, "datasets": {"data-23958fbc6f5dc4c30b0e4fe78c6f7cc9": [{"category": "Label", "value": "AOI 32"}, {"category": "sumTrees/Canopy", "value": 1464}, {"category": "sumImperviousSurface", "value": 336}, {"category": "sumGrass", "value": 61}, {"category": "sumRivers/Streams", "value": 57}, {"category": "sumLake/Pond", "value": 2}, {"category": "sumCultivatedVegetation", "value": 1099}, {"category": "sumBareGround", "value": 378}, {"category": "sumBuilding", "value": 193}, {"category": "sumTreatedPool", "value": 0}, {"category": "sumUnknown", "value": 0}, {"category": "sumBush/Shrub", "value": 106}, {"category": "sumShadow", "value": 4}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 32"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_d64f224582796a7e15f6235f747b4d2d.bindTooltip(
+                `<div>
+                     AOI 32 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5bb1f984d516ba950794fb449edae9da = L.marker(
+                [39.54627128, -119.8297048],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_2e54f7799bb2e16eb0969d06356bdae3 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_567fd465c524ad97c42160106b2cb7dd = $(`             <div id="vega_lite_567fd465c524ad97c42160106b2cb7dd"></div>             `)[0];
+                popup_2e54f7799bb2e16eb0969d06356bdae3.setContent(vega_lite_567fd465c524ad97c42160106b2cb7dd);
+            
+        
+
+        marker_5bb1f984d516ba950794fb449edae9da.bindPopup(popup_2e54f7799bb2e16eb0969d06356bdae3)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_567fd465c524ad97c42160106b2cb7dd, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-0b58c2b2cf6e94e483c55023bdd37661"}, "datasets": {"data-0b58c2b2cf6e94e483c55023bdd37661": [{"category": "Label", "value": "AOI 33"}, {"category": "sumTrees/Canopy", "value": 539}, {"category": "sumImperviousSurface", "value": 830}, {"category": "sumGrass", "value": 415}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 1}, {"category": "sumCultivatedVegetation", "value": 1}, {"category": "sumBareGround", "value": 1102}, {"category": "sumBuilding", "value": 533}, {"category": "sumTreatedPool", "value": 3}, {"category": "sumUnknown", "value": 0}, {"category": "sumBush/Shrub", "value": 239}, {"category": "sumShadow", "value": 12}, {"category": "sumIrrigationDitch", "value": 25}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 33"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_5bb1f984d516ba950794fb449edae9da.bindTooltip(
+                `<div>
+                     AOI 33 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a39d722626476c23aa03c91fd98ea8cc = L.marker(
+                [37.79133718, -122.4496651],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_6792d20a423c8989a5c2e3c9b829718d = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_e4d5606441b9e7afda03415daa318f9b = $(`             <div id="vega_lite_e4d5606441b9e7afda03415daa318f9b"></div>             `)[0];
+                popup_6792d20a423c8989a5c2e3c9b829718d.setContent(vega_lite_e4d5606441b9e7afda03415daa318f9b);
+            
+        
+
+        marker_a39d722626476c23aa03c91fd98ea8cc.bindPopup(popup_6792d20a423c8989a5c2e3c9b829718d)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_e4d5606441b9e7afda03415daa318f9b, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-79719f0dcc097817e33d9dd4347d37a3"}, "datasets": {"data-79719f0dcc097817e33d9dd4347d37a3": [{"category": "Label", "value": "AOI 34"}, {"category": "sumTrees/Canopy", "value": 837}, {"category": "sumImperviousSurface", "value": 1340}, {"category": "sumGrass", "value": 117}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 12}, {"category": "sumCultivatedVegetation", "value": 13}, {"category": "sumBareGround", "value": 98}, {"category": "sumBuilding", "value": 1030}, {"category": "sumTreatedPool", "value": 0}, {"category": "sumUnknown", "value": 0}, {"category": "sumBush/Shrub", "value": 136}, {"category": "sumShadow", "value": 117}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 34"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_a39d722626476c23aa03c91fd98ea8cc.bindTooltip(
+                `<div>
+                     AOI 34 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_df618d359f076b56edce329d30a0c314 = L.marker(
+                [30.45004254, -91.08806491],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_2978c6f7e1491da86ceaa9b8d677efd8 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_cb55123ca4fcae129c47a4e2bb7fccfe = $(`             <div id="vega_lite_cb55123ca4fcae129c47a4e2bb7fccfe"></div>             `)[0];
+                popup_2978c6f7e1491da86ceaa9b8d677efd8.setContent(vega_lite_cb55123ca4fcae129c47a4e2bb7fccfe);
+            
+        
+
+        marker_df618d359f076b56edce329d30a0c314.bindPopup(popup_2978c6f7e1491da86ceaa9b8d677efd8)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_cb55123ca4fcae129c47a4e2bb7fccfe, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-d85c8fc3a771e91a1fea55ab026fc1d9"}, "datasets": {"data-d85c8fc3a771e91a1fea55ab026fc1d9": [{"category": "Label", "value": "AOI 35"}, {"category": "sumTrees/Canopy", "value": 980}, {"category": "sumImperviousSurface", "value": 961}, {"category": "sumGrass", "value": 1064}, {"category": "sumRivers/Streams", "value": 13}, {"category": "sumLake/Pond", "value": 0}, {"category": "sumCultivatedVegetation", "value": 1}, {"category": "sumBareGround", "value": 99}, {"category": "sumBuilding", "value": 486}, {"category": "sumTreatedPool", "value": 2}, {"category": "sumUnknown", "value": 6}, {"category": "sumBush/Shrub", "value": 22}, {"category": "sumShadow", "value": 66}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 35"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_df618d359f076b56edce329d30a0c314.bindTooltip(
+                `<div>
+                     AOI 35 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_549ec97e3ba4408b1b07d41a1e8c0b40 = L.marker(
+                [29.48399735, -95.09346094],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_7aaecfb315393ae11cfd3779b0ab89a4 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_ca2f5394cf75b98875f25fecc8eb39d4 = $(`             <div id="vega_lite_ca2f5394cf75b98875f25fecc8eb39d4"></div>             `)[0];
+                popup_7aaecfb315393ae11cfd3779b0ab89a4.setContent(vega_lite_ca2f5394cf75b98875f25fecc8eb39d4);
+            
+        
+
+        marker_549ec97e3ba4408b1b07d41a1e8c0b40.bindPopup(popup_7aaecfb315393ae11cfd3779b0ab89a4)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_ca2f5394cf75b98875f25fecc8eb39d4, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-b988b688c6750bd89b4f0339321a2104"}, "datasets": {"data-b988b688c6750bd89b4f0339321a2104": [{"category": "Label", "value": "AOI 36"}, {"category": "sumTrees/Canopy", "value": 489}, {"category": "sumImperviousSurface", "value": 876}, {"category": "sumGrass", "value": 1314}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 238}, {"category": "sumCultivatedVegetation", "value": 7}, {"category": "sumBareGround", "value": 191}, {"category": "sumBuilding", "value": 336}, {"category": "sumTreatedPool", "value": 4}, {"category": "sumUnknown", "value": 0}, {"category": "sumBush/Shrub", "value": 63}, {"category": "sumShadow", "value": 177}, {"category": "sumIrrigationDitch", "value": 5}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 36"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_549ec97e3ba4408b1b07d41a1e8c0b40.bindTooltip(
+                `<div>
+                     AOI 36 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b172defb969d5b2532eb3c310ba4c750 = L.marker(
+                [36.26304414, -95.77153659],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_a94b15943e3e86b91f43a2cdb5f95605 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_8cc38ed20ba17e95f00a00f0a5d76015 = $(`             <div id="vega_lite_8cc38ed20ba17e95f00a00f0a5d76015"></div>             `)[0];
+                popup_a94b15943e3e86b91f43a2cdb5f95605.setContent(vega_lite_8cc38ed20ba17e95f00a00f0a5d76015);
+            
+        
+
+        marker_b172defb969d5b2532eb3c310ba4c750.bindPopup(popup_a94b15943e3e86b91f43a2cdb5f95605)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_8cc38ed20ba17e95f00a00f0a5d76015, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-c6755e202ab20b72d82e33756b52de76"}, "datasets": {"data-c6755e202ab20b72d82e33756b52de76": [{"category": "Label", "value": "AOI 37"}, {"category": "sumTrees/Canopy", "value": 742}, {"category": "sumImperviousSurface", "value": 93}, {"category": "sumGrass", "value": 463}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 219}, {"category": "sumCultivatedVegetation", "value": 51}, {"category": "sumBareGround", "value": 1842}, {"category": "sumBuilding", "value": 120}, {"category": "sumTreatedPool", "value": 3}, {"category": "sumUnknown", "value": 0}, {"category": "sumBush/Shrub", "value": 158}, {"category": "sumShadow", "value": 9}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 37"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_b172defb969d5b2532eb3c310ba4c750.bindTooltip(
+                `<div>
+                     AOI 37 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_424643591eda035017de3ec0f797bcc2 = L.marker(
+                [40.61017333, -74.06982422],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_dba189f3008024d6bc06a9a10cb37448 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_a8212819956e89e3bb1ee74378def0fb = $(`             <div id="vega_lite_a8212819956e89e3bb1ee74378def0fb"></div>             `)[0];
+                popup_dba189f3008024d6bc06a9a10cb37448.setContent(vega_lite_a8212819956e89e3bb1ee74378def0fb);
+            
+        
+
+        marker_424643591eda035017de3ec0f797bcc2.bindPopup(popup_dba189f3008024d6bc06a9a10cb37448)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_a8212819956e89e3bb1ee74378def0fb, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-037e9525138fa58a3fa3db12b7530edb"}, "datasets": {"data-037e9525138fa58a3fa3db12b7530edb": [{"category": "Label", "value": "AOI 38"}, {"category": "sumTrees/Canopy", "value": 675}, {"category": "sumImperviousSurface", "value": 1292}, {"category": "sumGrass", "value": 239}, {"category": "sumRivers/Streams", "value": 715}, {"category": "sumLake/Pond", "value": 16}, {"category": "sumCultivatedVegetation", "value": 39}, {"category": "sumBareGround", "value": 76}, {"category": "sumBuilding", "value": 0}, {"category": "sumTreatedPool", "value": 5}, {"category": "sumUnknown", "value": 19}, {"category": "sumBush/Shrub", "value": 28}, {"category": "sumShadow", "value": 596}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 38"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_424643591eda035017de3ec0f797bcc2.bindTooltip(
+                `<div>
+                     AOI 38 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d0376e15ed1528f92618393c05b3c0c9 = L.marker(
+                [25.97167433, -80.13194382],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_9737f1231303deeb6296e9bb5f080108 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_20ebdb8e78d4f37765b98e45c12ab36e = $(`             <div id="vega_lite_20ebdb8e78d4f37765b98e45c12ab36e"></div>             `)[0];
+                popup_9737f1231303deeb6296e9bb5f080108.setContent(vega_lite_20ebdb8e78d4f37765b98e45c12ab36e);
+            
+        
+
+        marker_d0376e15ed1528f92618393c05b3c0c9.bindPopup(popup_9737f1231303deeb6296e9bb5f080108)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_20ebdb8e78d4f37765b98e45c12ab36e, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-2d04e627173ff0cf7e4455f6322dbc56"}, "datasets": {"data-2d04e627173ff0cf7e4455f6322dbc56": [{"category": "Label", "value": "AOI 39"}, {"category": "sumTrees/Canopy", "value": 618}, {"category": "sumImperviousSurface", "value": 1140}, {"category": "sumGrass", "value": 461}, {"category": "sumRivers/Streams", "value": 433}, {"category": "sumLake/Pond", "value": 139}, {"category": "sumCultivatedVegetation", "value": 0}, {"category": "sumBareGround", "value": 140}, {"category": "sumBuilding", "value": 652}, {"category": "sumTreatedPool", "value": 18}, {"category": "sumUnknown", "value": 4}, {"category": "sumBush/Shrub", "value": 89}, {"category": "sumShadow", "value": 6}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 39"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_d0376e15ed1528f92618393c05b3c0c9.bindTooltip(
+                `<div>
+                     AOI 39 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9fc3d278c04bbccaf50348bae0b553bb = L.marker(
+                [28.21120132, -82.3425293],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_d9e4be4ce84aeba98786b5d66fda9765 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_b3d4ac64ec4e17a9879cfdd9d0405569 = $(`             <div id="vega_lite_b3d4ac64ec4e17a9879cfdd9d0405569"></div>             `)[0];
+                popup_d9e4be4ce84aeba98786b5d66fda9765.setContent(vega_lite_b3d4ac64ec4e17a9879cfdd9d0405569);
+            
+        
+
+        marker_9fc3d278c04bbccaf50348bae0b553bb.bindPopup(popup_d9e4be4ce84aeba98786b5d66fda9765)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_b3d4ac64ec4e17a9879cfdd9d0405569, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-4af15467c6e2b14ea3e268b2f37ec54a"}, "datasets": {"data-4af15467c6e2b14ea3e268b2f37ec54a": [{"category": "Label", "value": "AOI 40"}, {"category": "sumTrees/Canopy", "value": 778}, {"category": "sumImperviousSurface", "value": 203}, {"category": "sumGrass", "value": 738}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 283}, {"category": "sumCultivatedVegetation", "value": 0}, {"category": "sumBareGround", "value": 529}, {"category": "sumBuilding", "value": 139}, {"category": "sumTreatedPool", "value": 2}, {"category": "sumUnknown", "value": 0}, {"category": "sumBush/Shrub", "value": 1002}, {"category": "sumShadow", "value": 26}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 40"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_9fc3d278c04bbccaf50348bae0b553bb.bindTooltip(
+                `<div>
+                     AOI 40 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aac79989aca0c4a98d419a5586ca6e77 = L.marker(
+                [40.78611593, -73.96208647],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_d0fca6e7ef2222eaaa2ae6ecf58f768f = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_bafb003ce3458c0a2f10a59bd84297a9 = $(`             <div id="vega_lite_bafb003ce3458c0a2f10a59bd84297a9"></div>             `)[0];
+                popup_d0fca6e7ef2222eaaa2ae6ecf58f768f.setContent(vega_lite_bafb003ce3458c0a2f10a59bd84297a9);
+            
+        
+
+        marker_aac79989aca0c4a98d419a5586ca6e77.bindPopup(popup_d0fca6e7ef2222eaaa2ae6ecf58f768f)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_bafb003ce3458c0a2f10a59bd84297a9, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-5f4be22bc8c4d6ad01a61d49840c5503"}, "datasets": {"data-5f4be22bc8c4d6ad01a61d49840c5503": [{"category": "Label", "value": "AOI 42"}, {"category": "sumTrees/Canopy", "value": 781}, {"category": "sumImperviousSurface", "value": 805}, {"category": "sumGrass", "value": 185}, {"category": "sumRivers/Streams", "value": 35}, {"category": "sumLake/Pond", "value": 381}, {"category": "sumCultivatedVegetation", "value": 0}, {"category": "sumBareGround", "value": 28}, {"category": "sumBuilding", "value": 1044}, {"category": "sumTreatedPool", "value": 0}, {"category": "sumUnknown", "value": 22}, {"category": "sumBush/Shrub", "value": 36}, {"category": "sumShadow", "value": 383}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 42"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_aac79989aca0c4a98d419a5586ca6e77.bindTooltip(
+                `<div>
+                     AOI 42 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bfc9d405bd789cc2573c8a4bd5d9c944 = L.marker(
+                [34.14189783, -84.23133989],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_e33d6b79a01ec93dd99766952480dcc9 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_bb5bfff73c1df11400d1afb4a2e55722 = $(`             <div id="vega_lite_bb5bfff73c1df11400d1afb4a2e55722"></div>             `)[0];
+                popup_e33d6b79a01ec93dd99766952480dcc9.setContent(vega_lite_bb5bfff73c1df11400d1afb4a2e55722);
+            
+        
+
+        marker_bfc9d405bd789cc2573c8a4bd5d9c944.bindPopup(popup_e33d6b79a01ec93dd99766952480dcc9)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_bb5bfff73c1df11400d1afb4a2e55722, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-f47058e47733dd62e1c675cd6b08a9d8"}, "datasets": {"data-f47058e47733dd62e1c675cd6b08a9d8": [{"category": "Label", "value": "AOI 45"}, {"category": "sumTrees/Canopy", "value": 2202}, {"category": "sumImperviousSurface", "value": 720}, {"category": "sumGrass", "value": 459}, {"category": "sumRivers/Streams", "value": 9}, {"category": "sumLake/Pond", "value": 29}, {"category": "sumCultivatedVegetation", "value": 0}, {"category": "sumBareGround", "value": 10}, {"category": "sumBuilding", "value": 170}, {"category": "sumTreatedPool", "value": 0}, {"category": "sumUnknown", "value": 0}, {"category": "sumBush/Shrub", "value": 40}, {"category": "sumShadow", "value": 61}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 45"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_bfc9d405bd789cc2573c8a4bd5d9c944.bindTooltip(
+                `<div>
+                     AOI 45 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_89cf59d04dd6e93f62e77b1877837ec0 = L.marker(
+                [28.04792045, -82.59718493],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_6883451c66bace34e5c42cb1fc649763 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_ff60b579c9833ba7eff3d462aa841315 = $(`             <div id="vega_lite_ff60b579c9833ba7eff3d462aa841315"></div>             `)[0];
+                popup_6883451c66bace34e5c42cb1fc649763.setContent(vega_lite_ff60b579c9833ba7eff3d462aa841315);
+            
+        
+
+        marker_89cf59d04dd6e93f62e77b1877837ec0.bindPopup(popup_6883451c66bace34e5c42cb1fc649763)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_ff60b579c9833ba7eff3d462aa841315, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-5e3adb36e45b7b383f49533aa30efd1d"}, "datasets": {"data-5e3adb36e45b7b383f49533aa30efd1d": [{"category": "Label", "value": "AOI 46"}, {"category": "sumTrees/Canopy", "value": 1387}, {"category": "sumImperviousSurface", "value": 401}, {"category": "sumGrass", "value": 40}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 465}, {"category": "sumCultivatedVegetation", "value": 441}, {"category": "sumBareGround", "value": 56}, {"category": "sumBuilding", "value": 654}, {"category": "sumTreatedPool", "value": 15}, {"category": "sumUnknown", "value": 0}, {"category": "sumBush/Shrub", "value": 0}, {"category": "sumShadow", "value": 241}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 46"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_89cf59d04dd6e93f62e77b1877837ec0.bindTooltip(
+                `<div>
+                     AOI 46 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8be5820fb3cd48637cfbd3195d6c95c4 = L.marker(
+                [33.55337658, -117.1485043],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_62da9ea6aca0a1d9d6c49dd395ae3373 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_e60ff755a73f78853ca47736eb75c3d5 = $(`             <div id="vega_lite_e60ff755a73f78853ca47736eb75c3d5"></div>             `)[0];
+                popup_62da9ea6aca0a1d9d6c49dd395ae3373.setContent(vega_lite_e60ff755a73f78853ca47736eb75c3d5);
+            
+        
+
+        marker_8be5820fb3cd48637cfbd3195d6c95c4.bindPopup(popup_62da9ea6aca0a1d9d6c49dd395ae3373)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_e60ff755a73f78853ca47736eb75c3d5, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-f984fa79e9438cccf075bd5df8e5d380"}, "datasets": {"data-f984fa79e9438cccf075bd5df8e5d380": [{"category": "Label", "value": "AOI 47"}, {"category": "sumTrees/Canopy", "value": 507}, {"category": "sumImperviousSurface", "value": 1092}, {"category": "sumGrass", "value": 0}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 0}, {"category": "sumCultivatedVegetation", "value": 411}, {"category": "sumBareGround", "value": 545}, {"category": "sumBuilding", "value": 719}, {"category": "sumTreatedPool", "value": 30}, {"category": "sumUnknown", "value": 2}, {"category": "sumBush/Shrub", "value": 326}, {"category": "sumShadow", "value": 68}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 47"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_8be5820fb3cd48637cfbd3195d6c95c4.bindTooltip(
+                `<div>
+                     AOI 47 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_90f15882913bbe5d9964e1f05a1f9952 = L.marker(
+                [29.76437738, -95.66516876],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_9f93d628c992451d84e41df1663452ca = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_982bd11455119eebc2a9bd0beebbd61a = $(`             <div id="vega_lite_982bd11455119eebc2a9bd0beebbd61a"></div>             `)[0];
+                popup_9f93d628c992451d84e41df1663452ca.setContent(vega_lite_982bd11455119eebc2a9bd0beebbd61a);
+            
+        
+
+        marker_90f15882913bbe5d9964e1f05a1f9952.bindPopup(popup_9f93d628c992451d84e41df1663452ca)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_982bd11455119eebc2a9bd0beebbd61a, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-a226e33aaa8ae40e3592b49521b1023b"}, "datasets": {"data-a226e33aaa8ae40e3592b49521b1023b": [{"category": "Label", "value": "AOI 48"}, {"category": "sumTrees/Canopy", "value": 2776}, {"category": "sumImperviousSurface", "value": 0}, {"category": "sumGrass", "value": 29}, {"category": "sumRivers/Streams", "value": 65}, {"category": "sumLake/Pond", "value": 90}, {"category": "sumCultivatedVegetation", "value": 0}, {"category": "sumBareGround", "value": 119}, {"category": "sumBuilding", "value": 0}, {"category": "sumTreatedPool", "value": 0}, {"category": "sumUnknown", "value": 0}, {"category": "sumBush/Shrub", "value": 621}, {"category": "sumShadow", "value": 0}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 48"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_90f15882913bbe5d9964e1f05a1f9952.bindTooltip(
+                `<div>
+                     AOI 48 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c38b7b42cf2db9e85505097bfeeb21c3 = L.marker(
+                [55.78960456, 12.56612778],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_12bc2362e65f4bc18d8b06fd9e302802 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_fb74e9f17f3ff00f5a33a1a4c11e4339 = $(`             <div id="vega_lite_fb74e9f17f3ff00f5a33a1a4c11e4339"></div>             `)[0];
+                popup_12bc2362e65f4bc18d8b06fd9e302802.setContent(vega_lite_fb74e9f17f3ff00f5a33a1a4c11e4339);
+            
+        
+
+        marker_c38b7b42cf2db9e85505097bfeeb21c3.bindPopup(popup_12bc2362e65f4bc18d8b06fd9e302802)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_fb74e9f17f3ff00f5a33a1a4c11e4339, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-d977d4c340a66126e16de495ba6cfadc"}, "datasets": {"data-d977d4c340a66126e16de495ba6cfadc": [{"category": "Label", "value": "AOI 49"}, {"category": "sumTrees/Canopy", "value": 1183}, {"category": "sumImperviousSurface", "value": 170}, {"category": "sumGrass", "value": 1196}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 0}, {"category": "sumCultivatedVegetation", "value": 0}, {"category": "sumBareGround", "value": 195}, {"category": "sumBuilding", "value": 0}, {"category": "sumTreatedPool", "value": 0}, {"category": "sumUnknown", "value": 12}, {"category": "sumBush/Shrub", "value": 864}, {"category": "sumShadow", "value": 80}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 49"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_c38b7b42cf2db9e85505097bfeeb21c3.bindTooltip(
+                `<div>
+                     AOI 49 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1a4a45a605833f11c6db160212db61f0 = L.marker(
+                [31.54800235, -97.11403568],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_c78c57e48b41e9dde9f0eca33ea843d6 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_6d74f8cbbc802aea7d2679d1d70a3e5e = $(`             <div id="vega_lite_6d74f8cbbc802aea7d2679d1d70a3e5e"></div>             `)[0];
+                popup_c78c57e48b41e9dde9f0eca33ea843d6.setContent(vega_lite_6d74f8cbbc802aea7d2679d1d70a3e5e);
+            
+        
+
+        marker_1a4a45a605833f11c6db160212db61f0.bindPopup(popup_c78c57e48b41e9dde9f0eca33ea843d6)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_6d74f8cbbc802aea7d2679d1d70a3e5e, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-12b856d3c313e7a723b659817a95f0c8"}, "datasets": {"data-12b856d3c313e7a723b659817a95f0c8": [{"category": "Label", "value": "AOI 51"}, {"category": "sumTrees/Canopy", "value": 603}, {"category": "sumImperviousSurface", "value": 1321}, {"category": "sumGrass", "value": 997}, {"category": "sumRivers/Streams", "value": 108}, {"category": "sumLake/Pond", "value": 0}, {"category": "sumCultivatedVegetation", "value": 23}, {"category": "sumBareGround", "value": 74}, {"category": "sumBuilding", "value": 308}, {"category": "sumTreatedPool", "value": 1}, {"category": "sumUnknown", "value": 14}, {"category": "sumBush/Shrub", "value": 0}, {"category": "sumShadow", "value": 251}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 51"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_1a4a45a605833f11c6db160212db61f0.bindTooltip(
+                `<div>
+                     AOI 51 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eb6aabe20d85cabcb9aa07839a0b8909 = L.marker(
+                [37.53265426, -122.2538102],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_1f36e9b9afc0c8804b667a5f6c5d437e = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_241253cd4d71a455883321afc450f2f0 = $(`             <div id="vega_lite_241253cd4d71a455883321afc450f2f0"></div>             `)[0];
+                popup_1f36e9b9afc0c8804b667a5f6c5d437e.setContent(vega_lite_241253cd4d71a455883321afc450f2f0);
+            
+        
+
+        marker_eb6aabe20d85cabcb9aa07839a0b8909.bindPopup(popup_1f36e9b9afc0c8804b667a5f6c5d437e)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_241253cd4d71a455883321afc450f2f0, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-76431815c55c0eb3a1e8d26065803e7f"}, "datasets": {"data-76431815c55c0eb3a1e8d26065803e7f": [{"category": "Label", "value": "AOI 52"}, {"category": "sumTrees/Canopy", "value": 240}, {"category": "sumImperviousSurface", "value": 1216}, {"category": "sumGrass", "value": 266}, {"category": "sumRivers/Streams", "value": 379}, {"category": "sumLake/Pond", "value": 66}, {"category": "sumCultivatedVegetation", "value": 0}, {"category": "sumBareGround", "value": 246}, {"category": "sumBuilding", "value": 638}, {"category": "sumTreatedPool", "value": 1}, {"category": "sumUnknown", "value": 1}, {"category": "sumBush/Shrub", "value": 221}, {"category": "sumShadow", "value": 19}, {"category": "sumIrrigationDitch", "value": 407}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 52"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_eb6aabe20d85cabcb9aa07839a0b8909.bindTooltip(
+                `<div>
+                     AOI 52 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4026681e99660ab0425baebf9e70f41b = L.marker(
+                [32.85355463, -97.04549789],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_8b761ceb8b60533ad043102264895b14 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_1a5bd4f118c7679f82cc64a67ccf426f = $(`             <div id="vega_lite_1a5bd4f118c7679f82cc64a67ccf426f"></div>             `)[0];
+                popup_8b761ceb8b60533ad043102264895b14.setContent(vega_lite_1a5bd4f118c7679f82cc64a67ccf426f);
+            
+        
+
+        marker_4026681e99660ab0425baebf9e70f41b.bindPopup(popup_8b761ceb8b60533ad043102264895b14)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_1a5bd4f118c7679f82cc64a67ccf426f, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-e93ef644a48c66c2ebf13b845b9690a1"}, "datasets": {"data-e93ef644a48c66c2ebf13b845b9690a1": [{"category": "Label", "value": "AOI 53"}, {"category": "sumTrees/Canopy", "value": 1844}, {"category": "sumImperviousSurface", "value": 246}, {"category": "sumGrass", "value": 1155}, {"category": "sumRivers/Streams", "value": 10}, {"category": "sumLake/Pond", "value": 79}, {"category": "sumCultivatedVegetation", "value": 0}, {"category": "sumBareGround", "value": 162}, {"category": "sumBuilding", "value": 125}, {"category": "sumTreatedPool", "value": 0}, {"category": "sumUnknown", "value": 0}, {"category": "sumBush/Shrub", "value": 79}, {"category": "sumShadow", "value": 0}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 53"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_4026681e99660ab0425baebf9e70f41b.bindTooltip(
+                `<div>
+                     AOI 53 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fd2cd0e3efb5616a2adaa836751ee3ab = L.marker(
+                [30.32107395, -97.98497267],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_f8709b88268882e1370017c54a5dac0e = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_fd9dd8e0cd6c54bfb8e7be2a506dd25a = $(`             <div id="vega_lite_fd9dd8e0cd6c54bfb8e7be2a506dd25a"></div>             `)[0];
+                popup_f8709b88268882e1370017c54a5dac0e.setContent(vega_lite_fd9dd8e0cd6c54bfb8e7be2a506dd25a);
+            
+        
+
+        marker_fd2cd0e3efb5616a2adaa836751ee3ab.bindPopup(popup_f8709b88268882e1370017c54a5dac0e)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_fd9dd8e0cd6c54bfb8e7be2a506dd25a, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-98afe7240a063bbb9842d4d5bb9075bf"}, "datasets": {"data-98afe7240a063bbb9842d4d5bb9075bf": [{"category": "Label", "value": "AOI 55"}, {"category": "sumTrees/Canopy", "value": 1612}, {"category": "sumImperviousSurface", "value": 494}, {"category": "sumGrass", "value": 879}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 0}, {"category": "sumCultivatedVegetation", "value": 0}, {"category": "sumBareGround", "value": 292}, {"category": "sumBuilding", "value": 305}, {"category": "sumTreatedPool", "value": 4}, {"category": "sumUnknown", "value": 0}, {"category": "sumBush/Shrub", "value": 12}, {"category": "sumShadow", "value": 102}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 55"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_fd2cd0e3efb5616a2adaa836751ee3ab.bindTooltip(
+                `<div>
+                     AOI 55 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6525c1af101c9b0f7d1aed9dbbb08790 = L.marker(
+                [29.7229986, -95.29138148],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_dfcc2cf1266fa5d1eea1ce242732f7d9 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_867530559a4ffac51ac83fb4d9bce663 = $(`             <div id="vega_lite_867530559a4ffac51ac83fb4d9bce663"></div>             `)[0];
+                popup_dfcc2cf1266fa5d1eea1ce242732f7d9.setContent(vega_lite_867530559a4ffac51ac83fb4d9bce663);
+            
+        
+
+        marker_6525c1af101c9b0f7d1aed9dbbb08790.bindPopup(popup_dfcc2cf1266fa5d1eea1ce242732f7d9)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_867530559a4ffac51ac83fb4d9bce663, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-62a379a658e1d023fa31ee538ebe3969"}, "datasets": {"data-62a379a658e1d023fa31ee538ebe3969": [{"category": "Label", "value": "AOI 56"}, {"category": "sumTrees/Canopy", "value": 560}, {"category": "sumImperviousSurface", "value": 1069}, {"category": "sumGrass", "value": 963}, {"category": "sumRivers/Streams", "value": 48}, {"category": "sumLake/Pond", "value": 5}, {"category": "sumCultivatedVegetation", "value": 0}, {"category": "sumBareGround", "value": 170}, {"category": "sumBuilding", "value": 725}, {"category": "sumTreatedPool", "value": 0}, {"category": "sumUnknown", "value": 18}, {"category": "sumBush/Shrub", "value": 4}, {"category": "sumShadow", "value": 138}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 56"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_6525c1af101c9b0f7d1aed9dbbb08790.bindTooltip(
+                `<div>
+                     AOI 56 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_961beb030f22fe90b0ccb1bc70957fe9 = L.marker(
+                [40.77911158, -73.96785736],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_083f2c2371acab615a6da699514d8b8e = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_d547398e908905aacc5afdc62b079b1b = $(`             <div id="vega_lite_d547398e908905aacc5afdc62b079b1b"></div>             `)[0];
+                popup_083f2c2371acab615a6da699514d8b8e.setContent(vega_lite_d547398e908905aacc5afdc62b079b1b);
+            
+        
+
+        marker_961beb030f22fe90b0ccb1bc70957fe9.bindPopup(popup_083f2c2371acab615a6da699514d8b8e)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_d547398e908905aacc5afdc62b079b1b, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-e3fbbdc80a15887ccb77279a93dc3136"}, "datasets": {"data-e3fbbdc80a15887ccb77279a93dc3136": [{"category": "Label", "value": "AOI 57"}, {"category": "sumTrees/Canopy", "value": 1043}, {"category": "sumImperviousSurface", "value": 924}, {"category": "sumGrass", "value": 219}, {"category": "sumRivers/Streams", "value": 99}, {"category": "sumLake/Pond", "value": 200}, {"category": "sumCultivatedVegetation", "value": 0}, {"category": "sumBareGround", "value": 11}, {"category": "sumBuilding", "value": 991}, {"category": "sumTreatedPool", "value": 0}, {"category": "sumUnknown", "value": 13}, {"category": "sumBush/Shrub", "value": 1}, {"category": "sumShadow", "value": 178}, {"category": "sumIrrigationDitch", "value": 21}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 57"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_961beb030f22fe90b0ccb1bc70957fe9.bindTooltip(
+                `<div>
+                     AOI 57 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ab5bf3bec73a452e5616132b010150e = L.marker(
+                [41.77030665, -87.96932436],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_5cb166f7394a9cde1f055031e38e7481 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_0610e8acec7abe2a5e32d42bcb28a45c = $(`             <div id="vega_lite_0610e8acec7abe2a5e32d42bcb28a45c"></div>             `)[0];
+                popup_5cb166f7394a9cde1f055031e38e7481.setContent(vega_lite_0610e8acec7abe2a5e32d42bcb28a45c);
+            
+        
+
+        marker_9ab5bf3bec73a452e5616132b010150e.bindPopup(popup_5cb166f7394a9cde1f055031e38e7481)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_0610e8acec7abe2a5e32d42bcb28a45c, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-83bc2d7f70219347da0a7150fa1b03ca"}, "datasets": {"data-83bc2d7f70219347da0a7150fa1b03ca": [{"category": "Label", "value": "AOI 58"}, {"category": "sumTrees/Canopy", "value": 1085}, {"category": "sumImperviousSurface", "value": 837}, {"category": "sumGrass", "value": 1192}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 45}, {"category": "sumCultivatedVegetation", "value": 0}, {"category": "sumBareGround", "value": 15}, {"category": "sumBuilding", "value": 524}, {"category": "sumTreatedPool", "value": 2}, {"category": "sumUnknown", "value": 0}, {"category": "sumBush/Shrub", "value": 0}, {"category": "sumShadow", "value": 0}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 58"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_9ab5bf3bec73a452e5616132b010150e.bindTooltip(
+                `<div>
+                     AOI 58 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f432647e450a9acad0e4bff676fd3857 = L.marker(
+                [29.60277493, -98.6012719],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_b315ad1a2064be3ca4cc5c0319b8e99b = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_54ea471e58c1e1973151139ed817fa47 = $(`             <div id="vega_lite_54ea471e58c1e1973151139ed817fa47"></div>             `)[0];
+                popup_b315ad1a2064be3ca4cc5c0319b8e99b.setContent(vega_lite_54ea471e58c1e1973151139ed817fa47);
+            
+        
+
+        marker_f432647e450a9acad0e4bff676fd3857.bindPopup(popup_b315ad1a2064be3ca4cc5c0319b8e99b)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_54ea471e58c1e1973151139ed817fa47, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-1f3ad51ddc6f3c37cb08aaf56cd85940"}, "datasets": {"data-1f3ad51ddc6f3c37cb08aaf56cd85940": [{"category": "Label", "value": "AOI 61"}, {"category": "sumTrees/Canopy", "value": 1080}, {"category": "sumImperviousSurface", "value": 986}, {"category": "sumGrass", "value": 281}, {"category": "sumRivers/Streams", "value": 13}, {"category": "sumLake/Pond", "value": 0}, {"category": "sumCultivatedVegetation", "value": 0}, {"category": "sumBareGround", "value": 449}, {"category": "sumBuilding", "value": 279}, {"category": "sumTreatedPool", "value": 3}, {"category": "sumUnknown", "value": 0}, {"category": "sumBush/Shrub", "value": 512}, {"category": "sumShadow", "value": 97}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 61"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_f432647e450a9acad0e4bff676fd3857.bindTooltip(
+                `<div>
+                     AOI 61 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_415aa95b0ab46c23a52c901df7b1011d = L.marker(
+                [32.73698512, -97.42569029],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_3d0a29356c0af5df194fa5bcf819631b = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_908c3ae149105ccdda717b3c3a24b1d4 = $(`             <div id="vega_lite_908c3ae149105ccdda717b3c3a24b1d4"></div>             `)[0];
+                popup_3d0a29356c0af5df194fa5bcf819631b.setContent(vega_lite_908c3ae149105ccdda717b3c3a24b1d4);
+            
+        
+
+        marker_415aa95b0ab46c23a52c901df7b1011d.bindPopup(popup_3d0a29356c0af5df194fa5bcf819631b)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_908c3ae149105ccdda717b3c3a24b1d4, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-c0b5efa19303de0429ac9c2786a4c352"}, "datasets": {"data-c0b5efa19303de0429ac9c2786a4c352": [{"category": "Label", "value": "AOI 64"}, {"category": "sumTrees/Canopy", "value": 1019}, {"category": "sumImperviousSurface", "value": 1016}, {"category": "sumGrass", "value": 988}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 0}, {"category": "sumCultivatedVegetation", "value": 0}, {"category": "sumBareGround", "value": 57}, {"category": "sumBuilding", "value": 520}, {"category": "sumTreatedPool", "value": 8}, {"category": "sumUnknown", "value": 1}, {"category": "sumBush/Shrub", "value": 17}, {"category": "sumShadow", "value": 74}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 64"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_415aa95b0ab46c23a52c901df7b1011d.bindTooltip(
+                `<div>
+                     AOI 64 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a03bde874628deed55dbd345a5ff9d58 = L.marker(
+                [42.75222054, -73.74211812],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_78c092d457f921972ebf32b2054d11eb = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_60808a74b7d7befe747700644d10219c = $(`             <div id="vega_lite_60808a74b7d7befe747700644d10219c"></div>             `)[0];
+                popup_78c092d457f921972ebf32b2054d11eb.setContent(vega_lite_60808a74b7d7befe747700644d10219c);
+            
+        
+
+        marker_a03bde874628deed55dbd345a5ff9d58.bindPopup(popup_78c092d457f921972ebf32b2054d11eb)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_60808a74b7d7befe747700644d10219c, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-5d9367286d0968d753538c5dcd46bae7"}, "datasets": {"data-5d9367286d0968d753538c5dcd46bae7": [{"category": "Label", "value": "AOI 65"}, {"category": "sumTrees/Canopy", "value": 869}, {"category": "sumImperviousSurface", "value": 822}, {"category": "sumGrass", "value": 1076}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 0}, {"category": "sumCultivatedVegetation", "value": 0}, {"category": "sumBareGround", "value": 234}, {"category": "sumBuilding", "value": 429}, {"category": "sumTreatedPool", "value": 15}, {"category": "sumUnknown", "value": 4}, {"category": "sumBush/Shrub", "value": 245}, {"category": "sumShadow", "value": 6}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 65"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_a03bde874628deed55dbd345a5ff9d58.bindTooltip(
+                `<div>
+                     AOI 65 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_17a84c094c686cb569a06df41c4516c6 = L.marker(
+                [34.44422042, -119.7061729],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_836ee2377a3653115a48fb24eacce9b2 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_6b5a25ccfea9746708949ab44f699198 = $(`             <div id="vega_lite_6b5a25ccfea9746708949ab44f699198"></div>             `)[0];
+                popup_836ee2377a3653115a48fb24eacce9b2.setContent(vega_lite_6b5a25ccfea9746708949ab44f699198);
+            
+        
+
+        marker_17a84c094c686cb569a06df41c4516c6.bindPopup(popup_836ee2377a3653115a48fb24eacce9b2)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_6b5a25ccfea9746708949ab44f699198, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-dc72ae04e4d2912d6dd8061c822a4d70"}, "datasets": {"data-dc72ae04e4d2912d6dd8061c822a4d70": [{"category": "Label", "value": "AOI 69"}, {"category": "sumTrees/Canopy", "value": 1329}, {"category": "sumImperviousSurface", "value": 533}, {"category": "sumGrass", "value": 31}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 0}, {"category": "sumCultivatedVegetation", "value": 23}, {"category": "sumBareGround", "value": 761}, {"category": "sumBuilding", "value": 505}, {"category": "sumTreatedPool", "value": 12}, {"category": "sumUnknown", "value": 1}, {"category": "sumBush/Shrub", "value": 492}, {"category": "sumShadow", "value": 13}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 69"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_17a84c094c686cb569a06df41c4516c6.bindTooltip(
+                `<div>
+                     AOI 69 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a272785f633bbe7de85bf741efb7c8a2 = L.marker(
+                [30.5454346, -97.74148063],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_aaae6753a69c95b4d34dbeaca2523c93 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_36d2d9130ec7b0c9a8e7aff1d1dd27f4 = $(`             <div id="vega_lite_36d2d9130ec7b0c9a8e7aff1d1dd27f4"></div>             `)[0];
+                popup_aaae6753a69c95b4d34dbeaca2523c93.setContent(vega_lite_36d2d9130ec7b0c9a8e7aff1d1dd27f4);
+            
+        
+
+        marker_a272785f633bbe7de85bf741efb7c8a2.bindPopup(popup_aaae6753a69c95b4d34dbeaca2523c93)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_36d2d9130ec7b0c9a8e7aff1d1dd27f4, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-0e59d0f9335e840a15dc25509945f60d"}, "datasets": {"data-0e59d0f9335e840a15dc25509945f60d": [{"category": "Label", "value": "AOI 71"}, {"category": "sumTrees/Canopy", "value": 1363}, {"category": "sumImperviousSurface", "value": 433}, {"category": "sumGrass", "value": 876}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 7}, {"category": "sumCultivatedVegetation", "value": 0}, {"category": "sumBareGround", "value": 57}, {"category": "sumBuilding", "value": 405}, {"category": "sumTreatedPool", "value": 5}, {"category": "sumUnknown", "value": 6}, {"category": "sumBush/Shrub", "value": 95}, {"category": "sumShadow", "value": 453}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 71"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_a272785f633bbe7de85bf741efb7c8a2.bindTooltip(
+                `<div>
+                     AOI 71 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_79bf4ebe24832a706f6d0614090d89e6 = L.marker(
+                [32.46205, -93.73612404],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_6baf31334a22f1e9eeed096f0c3c0a74 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_ab1deec8b164ce7a03ae347e75caa460 = $(`             <div id="vega_lite_ab1deec8b164ce7a03ae347e75caa460"></div>             `)[0];
+                popup_6baf31334a22f1e9eeed096f0c3c0a74.setContent(vega_lite_ab1deec8b164ce7a03ae347e75caa460);
+            
+        
+
+        marker_79bf4ebe24832a706f6d0614090d89e6.bindPopup(popup_6baf31334a22f1e9eeed096f0c3c0a74)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_ab1deec8b164ce7a03ae347e75caa460, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-4176328478f7d327f2083e29e08e2310"}, "datasets": {"data-4176328478f7d327f2083e29e08e2310": [{"category": "Label", "value": "AOI 73"}, {"category": "sumTrees/Canopy", "value": 1525}, {"category": "sumImperviousSurface", "value": 632}, {"category": "sumGrass", "value": 779}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 1}, {"category": "sumCultivatedVegetation", "value": 0}, {"category": "sumBareGround", "value": 24}, {"category": "sumBuilding", "value": 587}, {"category": "sumTreatedPool", "value": 9}, {"category": "sumUnknown", "value": 0}, {"category": "sumBush/Shrub", "value": 45}, {"category": "sumShadow", "value": 75}, {"category": "sumIrrigationDitch", "value": 23}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 73"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_79bf4ebe24832a706f6d0614090d89e6.bindTooltip(
+                `<div>
+                     AOI 73 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fed2ed7ca1e96b7e8a2ae12c6134345d = L.marker(
+                [30.53633466, -97.72093445],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_f5e4c5c9176fcf91935ebd1073f3d348 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_f3acfa6af60c94da0b68e885c336a039 = $(`             <div id="vega_lite_f3acfa6af60c94da0b68e885c336a039"></div>             `)[0];
+                popup_f5e4c5c9176fcf91935ebd1073f3d348.setContent(vega_lite_f3acfa6af60c94da0b68e885c336a039);
+            
+        
+
+        marker_fed2ed7ca1e96b7e8a2ae12c6134345d.bindPopup(popup_f5e4c5c9176fcf91935ebd1073f3d348)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_f3acfa6af60c94da0b68e885c336a039, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-7461b66ccf87ae1b1f4000fba58f3051"}, "datasets": {"data-7461b66ccf87ae1b1f4000fba58f3051": [{"category": "Label", "value": "AOI 74"}, {"category": "sumTrees/Canopy", "value": 1436}, {"category": "sumImperviousSurface", "value": 450}, {"category": "sumGrass", "value": 1202}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 0}, {"category": "sumCultivatedVegetation", "value": 13}, {"category": "sumBareGround", "value": 131}, {"category": "sumBuilding", "value": 437}, {"category": "sumTreatedPool", "value": 11}, {"category": "sumUnknown", "value": 5}, {"category": "sumBush/Shrub", "value": 9}, {"category": "sumShadow", "value": 6}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 74"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_fed2ed7ca1e96b7e8a2ae12c6134345d.bindTooltip(
+                `<div>
+                     AOI 74 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e34683f193701ed2017f6dba8af54407 = L.marker(
+                [27.81099062, -82.6043129],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_400ffff0152e96be831eab4fae2bcece = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_ad38d12aa53f201299535bf5fdd23812 = $(`             <div id="vega_lite_ad38d12aa53f201299535bf5fdd23812"></div>             `)[0];
+                popup_400ffff0152e96be831eab4fae2bcece.setContent(vega_lite_ad38d12aa53f201299535bf5fdd23812);
+            
+        
+
+        marker_e34683f193701ed2017f6dba8af54407.bindPopup(popup_400ffff0152e96be831eab4fae2bcece)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_ad38d12aa53f201299535bf5fdd23812, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-d0363bc3f09eafcb4156c306dbb6f870"}, "datasets": {"data-d0363bc3f09eafcb4156c306dbb6f870": [{"category": "Label", "value": "AOI 76"}, {"category": "sumTrees/Canopy", "value": 505}, {"category": "sumImperviousSurface", "value": 513}, {"category": "sumGrass", "value": 1}, {"category": "sumRivers/Streams", "value": 83}, {"category": "sumLake/Pond", "value": 1594}, {"category": "sumCultivatedVegetation", "value": 394}, {"category": "sumBareGround", "value": 30}, {"category": "sumBuilding", "value": 438}, {"category": "sumTreatedPool", "value": 26}, {"category": "sumUnknown", "value": 9}, {"category": "sumBush/Shrub", "value": 6}, {"category": "sumShadow", "value": 101}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 76"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_e34683f193701ed2017f6dba8af54407.bindTooltip(
+                `<div>
+                     AOI 76 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d930d24900a25c2472d0f91a2f85ce38 = L.marker(
+                [41.49192797, -81.50439262],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_b238326242300b95077e8c7f1b67ce97 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_c72e30d8f0e940f412284b94a794ca76 = $(`             <div id="vega_lite_c72e30d8f0e940f412284b94a794ca76"></div>             `)[0];
+                popup_b238326242300b95077e8c7f1b67ce97.setContent(vega_lite_c72e30d8f0e940f412284b94a794ca76);
+            
+        
+
+        marker_d930d24900a25c2472d0f91a2f85ce38.bindPopup(popup_b238326242300b95077e8c7f1b67ce97)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_c72e30d8f0e940f412284b94a794ca76, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-792f1ef244f5443e09ead52e1353f345"}, "datasets": {"data-792f1ef244f5443e09ead52e1353f345": [{"category": "Label", "value": "AOI 77"}, {"category": "sumTrees/Canopy", "value": 1106}, {"category": "sumImperviousSurface", "value": 564}, {"category": "sumGrass", "value": 740}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 33}, {"category": "sumCultivatedVegetation", "value": 0}, {"category": "sumBareGround", "value": 60}, {"category": "sumBuilding", "value": 658}, {"category": "sumTreatedPool", "value": 3}, {"category": "sumUnknown", "value": 2}, {"category": "sumBush/Shrub", "value": 81}, {"category": "sumShadow", "value": 449}, {"category": "sumIrrigationDitch", "value": 4}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 77"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_d930d24900a25c2472d0f91a2f85ce38.bindTooltip(
+                `<div>
+                     AOI 77 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b94db640cdac0793fdb19bdc379ccb21 = L.marker(
+                [33.09500238, -96.76788725],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_4e334fa4c954a728267c90c0915c8eb9 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_e1bcc10b81e4a9b7fa83f131c2bf78e8 = $(`             <div id="vega_lite_e1bcc10b81e4a9b7fa83f131c2bf78e8"></div>             `)[0];
+                popup_4e334fa4c954a728267c90c0915c8eb9.setContent(vega_lite_e1bcc10b81e4a9b7fa83f131c2bf78e8);
+            
+        
+
+        marker_b94db640cdac0793fdb19bdc379ccb21.bindPopup(popup_4e334fa4c954a728267c90c0915c8eb9)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_e1bcc10b81e4a9b7fa83f131c2bf78e8, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-dc3ff13e04554f09ee5046e5d348b2e0"}, "datasets": {"data-dc3ff13e04554f09ee5046e5d348b2e0": [{"category": "Label", "value": "AOI 78"}, {"category": "sumTrees/Canopy", "value": 46}, {"category": "sumImperviousSurface", "value": 1054}, {"category": "sumGrass", "value": 84}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 11}, {"category": "sumCultivatedVegetation", "value": 1429}, {"category": "sumBareGround", "value": 131}, {"category": "sumBuilding", "value": 845}, {"category": "sumTreatedPool", "value": 37}, {"category": "sumUnknown", "value": 0}, {"category": "sumBush/Shrub", "value": 18}, {"category": "sumShadow", "value": 45}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 78"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_b94db640cdac0793fdb19bdc379ccb21.bindTooltip(
+                `<div>
+                     AOI 78 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dba071d5ac21d6c92b044c2d79d5c095 = L.marker(
+                [30.13115843, -92.04406969],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_8d56730fe5ab82eec9242438453bf82d = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_09301be96d881638d7214bacc1c5355c = $(`             <div id="vega_lite_09301be96d881638d7214bacc1c5355c"></div>             `)[0];
+                popup_8d56730fe5ab82eec9242438453bf82d.setContent(vega_lite_09301be96d881638d7214bacc1c5355c);
+            
+        
+
+        marker_dba071d5ac21d6c92b044c2d79d5c095.bindPopup(popup_8d56730fe5ab82eec9242438453bf82d)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_09301be96d881638d7214bacc1c5355c, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-0f9d170fef3f89135ad7afb2b5b50268"}, "datasets": {"data-0f9d170fef3f89135ad7afb2b5b50268": [{"category": "Label", "value": "AOI 80"}, {"category": "sumTrees/Canopy", "value": 800}, {"category": "sumImperviousSurface", "value": 262}, {"category": "sumGrass", "value": 1700}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 1}, {"category": "sumCultivatedVegetation", "value": 158}, {"category": "sumBareGround", "value": 224}, {"category": "sumBuilding", "value": 286}, {"category": "sumTreatedPool", "value": 6}, {"category": "sumUnknown", "value": 40}, {"category": "sumBush/Shrub", "value": 125}, {"category": "sumShadow", "value": 98}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 80"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_dba071d5ac21d6c92b044c2d79d5c095.bindTooltip(
+                `<div>
+                     AOI 80 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ceb41bd686db147f806a4de801bf470a = L.marker(
+                [34.17208008, -118.096118],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_b5cb18f0e3458ee4af37faad3718fef4 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_c78b776b8780f4298c68cb05d28d5072 = $(`             <div id="vega_lite_c78b776b8780f4298c68cb05d28d5072"></div>             `)[0];
+                popup_b5cb18f0e3458ee4af37faad3718fef4.setContent(vega_lite_c78b776b8780f4298c68cb05d28d5072);
+            
+        
+
+        marker_ceb41bd686db147f806a4de801bf470a.bindPopup(popup_b5cb18f0e3458ee4af37faad3718fef4)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_c78b776b8780f4298c68cb05d28d5072, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-66905e7aa4aaeafb3f143a97436b47ff"}, "datasets": {"data-66905e7aa4aaeafb3f143a97436b47ff": [{"category": "Label", "value": "AOI 83"}, {"category": "sumTrees/Canopy", "value": 1214}, {"category": "sumImperviousSurface", "value": 777}, {"category": "sumGrass", "value": 255}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 0}, {"category": "sumCultivatedVegetation", "value": 23}, {"category": "sumBareGround", "value": 543}, {"category": "sumBuilding", "value": 604}, {"category": "sumTreatedPool", "value": 20}, {"category": "sumUnknown", "value": 5}, {"category": "sumBush/Shrub", "value": 253}, {"category": "sumShadow", "value": 6}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 83"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_ceb41bd686db147f806a4de801bf470a.bindTooltip(
+                `<div>
+                     AOI 83 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5e359d3512b5967083b8e040a74b56e1 = L.marker(
+                [33.72352551, -117.9463006],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_9b3d97dea61dc5fab50face8a57223d6 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_361bf9a6f6fe88c4873895be5232f826 = $(`             <div id="vega_lite_361bf9a6f6fe88c4873895be5232f826"></div>             `)[0];
+                popup_9b3d97dea61dc5fab50face8a57223d6.setContent(vega_lite_361bf9a6f6fe88c4873895be5232f826);
+            
+        
+
+        marker_5e359d3512b5967083b8e040a74b56e1.bindPopup(popup_9b3d97dea61dc5fab50face8a57223d6)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_361bf9a6f6fe88c4873895be5232f826, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-71e455d1905b230925b858be92a45263"}, "datasets": {"data-71e455d1905b230925b858be92a45263": [{"category": "Label", "value": "AOI 85"}, {"category": "sumTrees/Canopy", "value": 367}, {"category": "sumImperviousSurface", "value": 1418}, {"category": "sumGrass", "value": 1237}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 28}, {"category": "sumCultivatedVegetation", "value": 4}, {"category": "sumBareGround", "value": 44}, {"category": "sumBuilding", "value": 513}, {"category": "sumTreatedPool", "value": 17}, {"category": "sumUnknown", "value": 0}, {"category": "sumBush/Shrub", "value": 66}, {"category": "sumShadow", "value": 6}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 85"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_5e359d3512b5967083b8e040a74b56e1.bindTooltip(
+                `<div>
+                     AOI 85 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7277e1a71cdbbfa37d1148cab408cbfb = L.marker(
+                [41.75332141, -72.76665688],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_569bd7975477d22a908d238095bb5f3b = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_6b6545d0fc6bcaa56fbf6894b96ab055 = $(`             <div id="vega_lite_6b6545d0fc6bcaa56fbf6894b96ab055"></div>             `)[0];
+                popup_569bd7975477d22a908d238095bb5f3b.setContent(vega_lite_6b6545d0fc6bcaa56fbf6894b96ab055);
+            
+        
+
+        marker_7277e1a71cdbbfa37d1148cab408cbfb.bindPopup(popup_569bd7975477d22a908d238095bb5f3b)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_6b6545d0fc6bcaa56fbf6894b96ab055, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-f935f1b45cc6c52b14c0ee34987c002c"}, "datasets": {"data-f935f1b45cc6c52b14c0ee34987c002c": [{"category": "Label", "value": "AOI 87"}, {"category": "sumTrees/Canopy", "value": 1881}, {"category": "sumImperviousSurface", "value": 470}, {"category": "sumGrass", "value": 407}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 77}, {"category": "sumCultivatedVegetation", "value": 60}, {"category": "sumBareGround", "value": 18}, {"category": "sumBuilding", "value": 237}, {"category": "sumTreatedPool", "value": 4}, {"category": "sumUnknown", "value": 2}, {"category": "sumBush/Shrub", "value": 64}, {"category": "sumShadow", "value": 480}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 87"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_7277e1a71cdbbfa37d1148cab408cbfb.bindTooltip(
+                `<div>
+                     AOI 87 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_623f6922ee21d0d2590aa259a9b9ec26 = L.marker(
+                [32.89907019, -96.79393528],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_a51bafc82ace76c9ac8a76b4eeec0170 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_324748254ff0ca74592f5e50e01a3f2e = $(`             <div id="vega_lite_324748254ff0ca74592f5e50e01a3f2e"></div>             `)[0];
+                popup_a51bafc82ace76c9ac8a76b4eeec0170.setContent(vega_lite_324748254ff0ca74592f5e50e01a3f2e);
+            
+        
+
+        marker_623f6922ee21d0d2590aa259a9b9ec26.bindPopup(popup_a51bafc82ace76c9ac8a76b4eeec0170)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_324748254ff0ca74592f5e50e01a3f2e, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-103a41a5b8bea6939b9b28cf45c28738"}, "datasets": {"data-103a41a5b8bea6939b9b28cf45c28738": [{"category": "Label", "value": "AOI 89"}, {"category": "sumTrees/Canopy", "value": 1467}, {"category": "sumImperviousSurface", "value": 682}, {"category": "sumGrass", "value": 574}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 40}, {"category": "sumCultivatedVegetation", "value": 6}, {"category": "sumBareGround", "value": 51}, {"category": "sumBuilding", "value": 768}, {"category": "sumTreatedPool", "value": 59}, {"category": "sumUnknown", "value": 0}, {"category": "sumBush/Shrub", "value": 41}, {"category": "sumShadow", "value": 12}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 89"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_623f6922ee21d0d2590aa259a9b9ec26.bindTooltip(
+                `<div>
+                     AOI 89 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_898194ea329801685e37a0fb67e424e0 = L.marker(
+                [32.86812183, -97.09188938],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_e757b7b4249a69e0499a15772188d6db = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_737cc3097c474c808025cd527039b257 = $(`             <div id="vega_lite_737cc3097c474c808025cd527039b257"></div>             `)[0];
+                popup_e757b7b4249a69e0499a15772188d6db.setContent(vega_lite_737cc3097c474c808025cd527039b257);
+            
+        
+
+        marker_898194ea329801685e37a0fb67e424e0.bindPopup(popup_e757b7b4249a69e0499a15772188d6db)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_737cc3097c474c808025cd527039b257, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-fd0a7c8c59d6f6713ba1fb5fa612764e"}, "datasets": {"data-fd0a7c8c59d6f6713ba1fb5fa612764e": [{"category": "Label", "value": "AOI 92"}, {"category": "sumTrees/Canopy", "value": 1246}, {"category": "sumImperviousSurface", "value": 923}, {"category": "sumGrass", "value": 807}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 46}, {"category": "sumCultivatedVegetation", "value": 0}, {"category": "sumBareGround", "value": 56}, {"category": "sumBuilding", "value": 571}, {"category": "sumTreatedPool", "value": 6}, {"category": "sumUnknown", "value": 0}, {"category": "sumBush/Shrub", "value": 43}, {"category": "sumShadow", "value": 0}, {"category": "sumIrrigationDitch", "value": 2}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 92"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_898194ea329801685e37a0fb67e424e0.bindTooltip(
+                `<div>
+                     AOI 92 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a206f304ae3c5503eed15490a8e4734 = L.marker(
+                [32.99407754, -117.1368007],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_050eee0743eb4072d70acd3626a2c4a9 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_0a8ca0fa53a3338e9f8768fcf4541fdb = $(`             <div id="vega_lite_0a8ca0fa53a3338e9f8768fcf4541fdb"></div>             `)[0];
+                popup_050eee0743eb4072d70acd3626a2c4a9.setContent(vega_lite_0a8ca0fa53a3338e9f8768fcf4541fdb);
+            
+        
+
+        marker_7a206f304ae3c5503eed15490a8e4734.bindPopup(popup_050eee0743eb4072d70acd3626a2c4a9)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_0a8ca0fa53a3338e9f8768fcf4541fdb, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-92d0a52a1df431497d35e3842a914c8c"}, "datasets": {"data-92d0a52a1df431497d35e3842a914c8c": [{"category": "Label", "value": "AOI 93"}, {"category": "sumTrees/Canopy", "value": 390}, {"category": "sumImperviousSurface", "value": 429}, {"category": "sumGrass", "value": 423}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 0}, {"category": "sumCultivatedVegetation", "value": 129}, {"category": "sumBareGround", "value": 198}, {"category": "sumBuilding", "value": 170}, {"category": "sumTreatedPool", "value": 7}, {"category": "sumUnknown", "value": 0}, {"category": "sumBush/Shrub", "value": 1954}, {"category": "sumShadow", "value": 0}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 93"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_7a206f304ae3c5503eed15490a8e4734.bindTooltip(
+                `<div>
+                     AOI 93 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e2f41992f3f98774ec9a1054744f470 = L.marker(
+                [32.62405095, -97.80836105],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_835b4337212b21b1c4d6ebcaa2d09ce8 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_151e42ab242d9e0e687288f130a27edd = $(`             <div id="vega_lite_151e42ab242d9e0e687288f130a27edd"></div>             `)[0];
+                popup_835b4337212b21b1c4d6ebcaa2d09ce8.setContent(vega_lite_151e42ab242d9e0e687288f130a27edd);
+            
+        
+
+        marker_4e2f41992f3f98774ec9a1054744f470.bindPopup(popup_835b4337212b21b1c4d6ebcaa2d09ce8)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_151e42ab242d9e0e687288f130a27edd, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-16402ed117c59f3b4e8c3504f2e3bebc"}, "datasets": {"data-16402ed117c59f3b4e8c3504f2e3bebc": [{"category": "Label", "value": "AOI 95"}, {"category": "sumTrees/Canopy", "value": 1268}, {"category": "sumImperviousSurface", "value": 95}, {"category": "sumGrass", "value": 1290}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 59}, {"category": "sumCultivatedVegetation", "value": 0}, {"category": "sumBareGround", "value": 844}, {"category": "sumBuilding", "value": 72}, {"category": "sumTreatedPool", "value": 0}, {"category": "sumUnknown", "value": 7}, {"category": "sumBush/Shrub", "value": 65}, {"category": "sumShadow", "value": 0}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 95"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_4e2f41992f3f98774ec9a1054744f470.bindTooltip(
+                `<div>
+                     AOI 95 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ad63b3a301e490908973ae304d7c2b97 = L.marker(
+                [33.97379433, -117.7634811],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_54df88da20db4326830242aa578e7181 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_23fb656f699106e02bdaf2851e7bf2ad = $(`             <div id="vega_lite_23fb656f699106e02bdaf2851e7bf2ad"></div>             `)[0];
+                popup_54df88da20db4326830242aa578e7181.setContent(vega_lite_23fb656f699106e02bdaf2851e7bf2ad);
+            
+        
+
+        marker_ad63b3a301e490908973ae304d7c2b97.bindPopup(popup_54df88da20db4326830242aa578e7181)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_23fb656f699106e02bdaf2851e7bf2ad, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-4eabdc31235c7ee511fccf5eb147adbc"}, "datasets": {"data-4eabdc31235c7ee511fccf5eb147adbc": [{"category": "Label", "value": "AOI 101"}, {"category": "sumTrees/Canopy", "value": 620}, {"category": "sumImperviousSurface", "value": 329}, {"category": "sumGrass", "value": 238}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 0}, {"category": "sumCultivatedVegetation", "value": 0}, {"category": "sumBareGround", "value": 1107}, {"category": "sumBuilding", "value": 186}, {"category": "sumTreatedPool", "value": 4}, {"category": "sumUnknown", "value": 0}, {"category": "sumBush/Shrub", "value": 932}, {"category": "sumShadow", "value": 284}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 101"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_ad63b3a301e490908973ae304d7c2b97.bindTooltip(
+                `<div>
+                     AOI 101 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eb6c2b4839a65693d931e2465fdc4b9e = L.marker(
+                [17.431061, 78.33305597],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_dfb4e777e74d7e930280cd4016fc2005 = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_7518ee946f421892d96d080bcd7e3855 = $(`             <div id="vega_lite_7518ee946f421892d96d080bcd7e3855"></div>             `)[0];
+                popup_dfb4e777e74d7e930280cd4016fc2005.setContent(vega_lite_7518ee946f421892d96d080bcd7e3855);
+            
+        
+
+        marker_eb6c2b4839a65693d931e2465fdc4b9e.bindPopup(popup_dfb4e777e74d7e930280cd4016fc2005)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_7518ee946f421892d96d080bcd7e3855, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-4d8bfdd4c455025fba274f1518c035f3"}, "datasets": {"data-4d8bfdd4c455025fba274f1518c035f3": [{"category": "Label", "value": "AOI 107"}, {"category": "sumTrees/Canopy", "value": 1643}, {"category": "sumImperviousSurface", "value": 326}, {"category": "sumGrass", "value": 77}, {"category": "sumRivers/Streams", "value": 0}, {"category": "sumLake/Pond", "value": 0}, {"category": "sumCultivatedVegetation", "value": 0}, {"category": "sumBareGround", "value": 664}, {"category": "sumBuilding", "value": 624}, {"category": "sumTreatedPool", "value": 0}, {"category": "sumUnknown", "value": 16}, {"category": "sumBush/Shrub", "value": 342}, {"category": "sumShadow", "value": 8}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 107"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_eb6c2b4839a65693d931e2465fdc4b9e.bindTooltip(
+                `<div>
+                     AOI 107 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ccbe778815eabdd9c8c21b5f36b90d0c = L.marker(
+                [32.73610069, -117.2484541],
+                {}
+            ).addTo(map_65b351ef196d973022ab331767f02211);
+        
+    
+        var popup_23d40c8a7a734b5cc1f927f11b343a2d = L.popup({"maxHeight": 400, "maxWidth": 600});
+
+        
+            
+                var vega_lite_1298bf9a17439fbb774aac456e95674b = $(`             <div id="vega_lite_1298bf9a17439fbb774aac456e95674b"></div>             `)[0];
+                popup_23d40c8a7a734b5cc1f927f11b343a2d.setContent(vega_lite_1298bf9a17439fbb774aac456e95674b);
+            
+        
+
+        marker_ccbe778815eabdd9c8c21b5f36b90d0c.bindPopup(popup_23d40c8a7a734b5cc1f927f11b343a2d)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_1298bf9a17439fbb774aac456e95674b, {"$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-058236b01f11f3289c86a07ecfb58248"}, "datasets": {"data-058236b01f11f3289c86a07ecfb58248": [{"category": "Label", "value": "AOI 109"}, {"category": "sumTrees/Canopy", "value": 464}, {"category": "sumImperviousSurface", "value": 936}, {"category": "sumGrass", "value": 247}, {"category": "sumRivers/Streams", "value": 1008}, {"category": "sumLake/Pond", "value": 0}, {"category": "sumCultivatedVegetation", "value": 0}, {"category": "sumBareGround", "value": 72}, {"category": "sumBuilding", "value": 817}, {"category": "sumTreatedPool", "value": 10}, {"category": "sumUnknown", "value": 2}, {"category": "sumBush/Shrub", "value": 121}, {"category": "sumShadow", "value": 23}, {"category": "sumIrrigationDitch", "value": 0}]}, "encoding": {"x": {"field": "value", "title": "Num_Plots (out of 3700)", "type": "quantitative"}, "y": {"field": "category", "title": "Landcover Category", "type": "nominal"}}, "mark": "bar", "title": "AOI 109"})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_ccbe778815eabdd9c8c21b5f36b90d0c.bindTooltip(
+                `<div>
+                     AOI 109 : See Landcover Distribution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
