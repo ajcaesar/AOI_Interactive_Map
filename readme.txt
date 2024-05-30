@@ -1,1 +1,1 @@
-This map was created to better visualize data collected by the 2022 NASA GLOBE internship cohort. To view the map, download the html file and open it in browser.
+This map was created following my time with the NASA SEES 2022 Summer Internship to help Dr. Low and her team better visualize the Area of Interest (AOI) data spacially. The product can be viewed at https://ajcaesar.github.io/AOI_Interactive_Map/
